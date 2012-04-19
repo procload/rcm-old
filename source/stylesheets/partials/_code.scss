@@ -1,0 +1,35 @@
+// Code.css.scss
+// Code typography styles for the <code> and <pre> elements
+// --------------------------------------------------------
+
+// Inline and block code styles
+code, pre {
+  padding: 0;
+  font-family: $monospace-font-family;
+}
+
+// Blocks of code
+pre {
+  display: block;
+  background-color: #F8F8FF;
+  border: 1px solid #ccc; // fallback for IE7-8
+  border: 1px solid rgba(0,0,0,.15);
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  // Make prettyprint styles more spaced out for readability
+  &.prettyprint {
+    padding: .679em;
+    margin: 0 0 1.618em;
+    line-height: 1.618em;
+    font-size: .679em;
+    margin-bottom: 2.618em;
+  }
+} //pre
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}

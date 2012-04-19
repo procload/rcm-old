@@ -1,0 +1,117 @@
+.container {
+  @include container;
+  //@include susy-grid-background;
+}
+
+// Global Layout Styles
+// --------------------------------------------------
+
+body {
+  width: 100%;
+  font-family: $baseFontFamily;
+  color: $textColor;
+  background: #FFF;
+  border-top: .679em solid #000;
+  font-size: 110%;
+  line-height: $baseLineHeight;
+}
+
+// Typography Styles
+// --------------------------------------------------
+
+@include font-face(  "Font Awesome",
+         font-files( "fonts/font-awesome/fontawesome-webfont.woff",
+                     "fonts/font-awesome/fontawesome-webfont.ttf",
+                     "fonts/font-awesome/fontawesome-webfont.svg",
+                     "fonts/font-awesome/fontawesome-webfont.svgz"),
+                     "fonts/font-awesome/fontawesome-webfont.eot");
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: $headlineFontFamily;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.25;
+} //h1 - h6
+
+h1 {
+  font-size: 2.618em;
+}
+
+h2 {
+  font-size: 1.778em;
+  line-height: 1.618;
+}
+
+h3 {
+  line-height: 1.618;
+  font-size: 1.099em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: .679em;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: .679em;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  border: 1px solid #000;
+  max-width: 100%;
+}
+
+.intro {
+  font-size: 1.36em; /* 4.236 - 2.876 */
+  @include respond-to(wide-screens) { font-size: 1.618em; }
+}
+
+blockquote {
+  margin: 0 0 1.618em 0;
+  font-family: $headlineFontFamily;
+  font-weight: 100;
+  color: rgba(0,0,0,.7);
+  border-left: 5px solid rgba(0,0,0,.1);
+  @include prefix(.5, 9);
+  margin-left: 4.5%;
+  font-style: italic;
+  font-size: .939em; // 1.618 - .679
+  small {
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+
+.gist {
+  font-size: calc-em(13px, $baseFontSize);
+  margin: 1.618em 0 2.618em 0;
+}
+
+/* Custom text-selection colors (remove any text shadows) */
+::-moz-selection{background: $linkColor; color: #fff; text-shadow: none;}
+::selection {background: $linkColor; color: #fff; text-shadow: none;}
+
+// Link Styles
+// --------------------------------------------------
+
+a {
+  text-decoration: none;
+  @include link-colors($linkColor, $linkHoverColor, $linkHoverColor, $linkColor, $linkHoverColor);
+  &.continue-reading {
+    font-size: calc-em(14px, $baseFontSize);
+    background: $linkColor;
+    color: #FFF;
+    padding: .42em;
+    border: 1px solid $linkHoverColor;
+  }
+}

@@ -1,0 +1,487 @@
+// Header
+// --------------------------------------------------
+
+.l-header {
+  font-family: $headlineFontFamily;
+  @include full;
+  @include group;
+
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  margin-top: 1.618em;
+  margin-bottom: 1.618em;
+  
+  h1 {
+    a {
+      @include link-colors($textColor, $linkColor, $linkColor, $textColor, $linkColor);
+    }
+  }
+  
+  h3 {
+    font-weight: normal;
+    padding-bottom: 1.618em;
+  } //h3
+  
+  hgroup {
+    /* Media Queries */
+    @include respond-to(medium-screens) { @include columns(8,12); }
+    @include respond-to(wide-screens) { @include columns(8,12); }    
+    
+  } //hgroup
+  
+  nav {
+    
+    /* Media Queries */
+    @include respond-to(medium-screens) { 
+      @include columns(4,12);
+      @include omega(4);
+    }
+    @include respond-to(wide-screens) {
+      @include columns(4,12);
+      @include omega(4);
+    }
+  } //nav
+  
+  ul {
+    @include group;
+    float: left;
+    width: 100%;
+    margin-bottom: 1.618em;
+    
+    /* Media Queries */
+    @include respond-to(medium-screens) {
+      float: right;
+      margin-top: 2.618em;
+    }
+    @include respond-to(wide-screens) {
+      float: right;
+      margin-top: 2.618em;
+    }
+    
+    li {
+      float: left;
+      margin-right: 1.099em;
+      
+      /* Media Queries */
+      @include respond-to(medium-screens) {
+        margin-right: 0;
+        width: 33%;
+      }
+      @include respond-to(wide-screens) {
+        margin-right: 0;
+        width: 33%;
+      }
+      
+      
+      a {
+        font-weight: bold;
+        color: $textColor;
+        width: auto;
+        float: left;
+        display: block;
+        font-size: 1.099em;
+        
+        /* Media Queries */
+        @include respond-to(medium-screens) { float: right; }
+        @include respond-to(wide-screens) { float: right; }  
+        
+        &.current {
+          border-bottom: 5px solid $linkColor;
+        } //current
+      } //a
+      &:last-child {
+      }
+    } //li
+  } //ul
+} //l-header
+
+
+// Main Content
+// --------------------------------------------------
+
+.l-content {
+  //@include grid-background($total-cols, $col-width, $gutter-width);
+  @include full;
+  @include group;
+  
+} //l-content
+
+
+.l-page-header {
+
+} //page-header
+
+// Page Body
+// --------------------------------------------------
+
+.l-page-body {
+  &.articles {
+    @include respond-to(wide-screens) { @include columns(10,12); }
+  }
+  
+  &.article {
+    > article {
+      @include respond-to(wide-screens) { @include pad(1,1); }
+    }
+  }
+  
+  &.about {
+    
+    > article {
+      @include respond-to(wide-screens) { @include pad(1,1); }
+      
+      .article-body {
+        @include group;
+      }
+    }
+    .about-text {
+      /* Media Queries */
+      @include respond-to(medium-screens) { @include columns(6, 12); }
+      @include respond-to(wide-screens) { @include columns(5, 10); }
+    }
+    
+    .write-me {
+      margin:  1.618em 0 2.618em 0;
+      
+      @include respond-to(wide-screens) {
+        background: transparent image-url('parts/icons/ico-write-me.png') no-repeat 12px;
+        @include prefix(2);
+      } //wide-screens
+      
+    }
+    .personal-details {
+      /* Media Queries */
+      @include respond-to(medium-screens) {
+        @include columns(6, 12);
+        @include omega(6);
+      }
+      @include respond-to(wide-screens) {
+        @include columns(5, 10);
+        @include omega(5);
+      }
+      
+      
+      .social-media {
+        li {
+          float: left;
+          width: 33%;
+        }
+      }
+      .twitter {
+        color: $twitterColor;
+        a {
+          @include link-colors($twitterColor, darken($twitterColor, 10%), darken($twitterColor, 10%), $twitterColor, darken($twitterColor, 10%));
+        }
+      }
+      .github {
+        color: $githubColor;
+        a {
+          @include link-colors($githubColor, darken($githubColor, 10%), darken($githubColor, 10%), $githubColor, darken($githubColor, 10%));
+        }
+        
+      }
+      .dribbble {
+        color: $dribbbleColor;
+        a {
+          @include link-colors($dribbbleColor, darken($dribbbleColor, 10%), darken($dribbbleColor, 10%), $dribbbleColor, darken($dribbbleColor, 10%));
+        }
+        
+      }
+      .flickr {
+        color: $flickrAltColor;
+        a {
+          @include link-colors($flickrColor, darken($flickrColor, 10%), darken($flickrColor, 10%), $flickrColor, darken($flickrColor, 10%));
+        }
+        
+      }
+      .rdio {
+        color: $rdioColor;
+        a {
+          @include link-colors($rdioColor, darken($rdioColor, 10%), darken($rdioColor, 10%), $rdioColor, darken($rdioColor, 10%));
+        }
+        
+      }
+      .linkedin {
+        color: $linkedinColor;
+        a {
+          @include link-colors($linkedinColor, darken($linkedinColor, 10%), darken($linkedinColor, 10%), $linkedinColor, darken($linkedinColor, 10%));
+        }
+        
+        
+      }
+      .facebook {
+        color: $facebookColor;
+        a {
+          @include link-colors($facebookColor, darken($facebookColor, 10%), darken($facebookColor, 10%), $facebookColor, darken($facebookColor, 10%));
+        }
+        
+      }
+    }
+  }
+  
+  > article {
+    
+    margin-bottom: 1.618em;
+    /* Media Queries */
+    @include respond-to(wide-screens) { @include prefix(1,10); }
+    
+
+    h1 {
+      font-size: 1.778em;
+      line-height: 1.519em; /* 2.618 - 1.099 */
+      margin-bottom: .382em;
+    }
+    
+    h2 {
+      font-size: 1.099em;
+      font-weight: normal;
+    }
+    
+    header {
+      margin-bottom: 1.618em;
+    }
+    
+    p {
+      margin: 0 0 1em;
+    }
+    
+    .l-article-body {
+      margin-bottom: 1.618em;
+      h2 {
+        font-weight: bold;
+      }
+      img {
+        border: 3px solid #333;
+        margin-top: .679em;
+        margin-bottom: 1.618em;
+        width: 111%;
+        max-width: 111%;
+        &.offset-left {
+          margin-left: -11.4%;
+        }
+      }
+      
+    } //article-body
+    
+    > footer {
+
+      border-top: 1px solid rgba(0,0,0,.2);
+      font-size: .679em;
+      @include group;
+      padding: 1em 0;
+      i {
+        float: left;
+        display: block;
+        color: $linkColor;
+        margin-right: 1em;
+      }
+      .tag-list {
+        
+        float: right;
+        display: block;
+        li {
+          float: left;
+          margin-right: 1.618em;
+          &.icon {
+            text-align: right;
+            margin: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          
+        } //li
+
+      } //tags
+    } //footer
+    
+    &.workpiece {
+      header {
+        h2 {
+          font-size: 1em;
+          font-family: $baseFontFamily;
+        }
+      }
+      
+      .article-body {
+        text-align: center;
+        h3 {
+          text-align: left;
+          margin-bottom: .618em;
+        }
+        img {
+          margin-bottom: 2.618em;
+          border: 1px solid #000;
+          &.logo {
+            border: none;
+          }
+          &.computer {
+            border: none;
+            margin-top: -22.332em; //19.714 + 2.618
+          }
+        }
+      } //article-body
+      &.wedding {
+        .article-body > div {
+          @include group;
+        }
+        .invite, .std {
+          width: 45%;
+        }
+        .invite {
+          float: left;
+        }
+        .std {
+          float: right;
+        }
+        img {
+          &.computer {
+            margin-top: 0;
+          }  
+        }
+      } //wedding
+    } //workpiece
+    
+  } //article
+  
+  .l-pagination {
+    @include prefix(1,10);
+    font-family: $headlineFontFamily;
+    font-weight: bold;
+    margin-bottom: 1.618em;
+    @include group;
+    
+    a {
+      float: right;
+      i {
+        margin-left: 5px;
+      }
+      @include create-button(#4096ee);
+    }
+  } //pagination
+  
+  .portfolio-list {
+    margin: 0 0 7.53em 0; 
+    padding: 0;
+    width: 100%;
+    @include group;
+    .portfolio-item {
+      float: left;
+      width: 40%;
+      /* Media Queries */
+      @include respond-to(medium-screens) { width: 27%; }
+      @include respond-to(wide-screens) { width: 27%; }
+      
+      
+      padding: 0 3%;
+      list-style-type: none;
+      text-align: center;
+      h2 {
+        font-size: 1.099em;
+      }
+      h3 {
+        font-size: .679em;
+        font-style: italic;
+        font-weight: normal;
+      }
+      img {
+        max-width: 100%;
+      } //img
+      &.system7 {
+        padding-top: calc-em(10px, $baseFontSize);
+        h2 {
+          padding-top: calc-em(18px, $baseFontSize);
+        }
+        
+      }
+      &.lower9 {
+        padding-top: calc-em(26px, $baseFontSize);
+        h2 {
+          padding-top: calc-em(30px, $baseFontSize);
+        }
+      
+      }
+      &.chub {
+        clear: both;
+        /* Media Queries */
+        @include respond-to(medium-screens) { clear: none; }
+        @include respond-to(wide-screens) { clear: none; }
+        
+        
+        padding-top: calc-em(64px, $baseFontSize);
+        h2 {
+          padding-top: calc-em(64px, $baseFontSize);
+        }
+      }
+      &.wedding {
+        width: 23%;
+        margin-left: 10%;
+        margin-top: 1.618em;
+        
+        /* Media Queries */
+        @include respond-to(medium-screens) {
+          clear: both;
+          width: 15%;
+          margin-top: 4.236em;
+          margin-left: 15%;
+          
+        }
+        @include respond-to(wide-screens) {
+          clear: both;
+          width: 15%;
+          margin-top: 4.236em;
+          margin-left: 15%;
+        }
+        
+        
+        h2 {
+          padding-top: calc-em(24px, $baseFontSize);
+        }
+        
+      }
+      &.penn-oaks {
+
+        
+        width: 30%;
+        
+        /* Media Queries */
+        @include respond-to(medium-screens) {
+          margin-top: 6em;
+          margin-left: 15%;
+          width: 25%;
+        
+          h2 {
+            padding-top: calc-em(26px, $baseFontSize);
+          }
+        } //medium-screens
+        @include respond-to(wide-screens) {
+          margin-top: 6em;
+          margin-left: 15%;
+          width: 25%;
+          h2 {
+            padding-top: calc-em(44px, $baseFontSize);
+          }
+        } //wide-screens
+        img {
+          border: 3px solid #333;
+        }
+      } //penn-oaks
+      
+    } //portfolio-item
+  } //portfolio-list
+  
+} //page-body
+
+// Footer
+// --------------------------------------------------
+
+.l-footer {
+  text-align: right;
+  border-top: 1px solid rgba(0,0,0,.1);
+  background: rgba(0,0,0,.06);
+  font-family: $headlineFontFamily;
+  padding: .618em 0;
+  > div {
+    @include full;
+    font-size: .679em;
+  }
+}
