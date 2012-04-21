@@ -1,1 +1,0 @@
-throw Error("Sprockets::EncodingError: /Users/ryanmerrill/Sites/Personal/rcm-middleman/source/javascripts/prettify/lang-scala.js has a invalid UTF-8 byte sequence")
