@@ -6,6 +6,10 @@
 // Global Layout Styles
 // --------------------------------------------------
 
+html {
+  background: #F0F0F0;
+}
+
 body {
   width: 100%;
   font-family: $baseFontFamily;
@@ -22,8 +26,7 @@ body {
 @include font-face(  "Font Awesome",
          font-files( "fonts/font-awesome/fontawesome-webfont.woff",
                      "fonts/font-awesome/fontawesome-webfont.ttf",
-                     "fonts/font-awesome/fontawesome-webfont.svg",
-                     "fonts/font-awesome/fontawesome-webfont.svgz"),
+                     "fonts/font-awesome/fontawesome-webfont.svg"),
                      "fonts/font-awesome/fontawesome-webfont.eot");
 
 h1, h2, h3,

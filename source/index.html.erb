@@ -1,102 +1,21 @@
 ---
 type: 'articles'
+nav: 'blog'
 ---
-<article>
-  <header>
-    <h1><a href="article.html" title="">This is my blog post and I think I like it</a></h1>
-  </header>
-  
-  <div class="l-article-body">
-    <p>Screwed at its axis against the side, a swinging lamp slightly oscillates in Jonah's room; and the ship, heelin over towards the wharf with the weight of the last bales received.</p>
-    <p>Flame and all, though in slight motion, still maintains a permanent obliquity with reference to the room; though, in truth, infallibly straight itself, it but made obvious the false, lying levels among which it hung.</p>
-    <%= image_tag 'tmp/img-tmp.png', :class => 'offset-left' %>
-    <script src="https://gist.github.com/2148280.js?file=TM2%20Properties%20File"></script>
-    
-    <p>The lamp alarms and frightens Jonah; as lying in his berth his tormented eyes roll round the place, and this thus far successful fugitive finds no refuge for</p>
-    <p>Flame and all, though in slight motion, still maintains a permanent obliquity with reference to the room; though, in truth, infallibly straight itself, it but made obvious the false, lying levels among which it hung.</p>  
-  </div>
-  <!-- /article-body -->
-  
-  <footer>
-    <time class="published updated" pubdate="" datetime="2011-05-06">May 6th, 2011</time>
-  </footer>
-</article>
 
-<article>
-  <header>
-    <h1><a href="article.html" title="">An example blockquote post</a></h1>
-  </header>
-  
-  <div class="l-article-body">
-    <p>Screwed at its axis against the side, a swinging lamp slightly oscillates in Jonah's room; and the ship, heelin over towards the wharf with the weight of the last bales received.</p>
-    <blockquote>
-      <p>
-        Flame and all, though in slight motion, still maintains a permanent obliquity with reference to the room; though, in truth, infallibly straight itself, it but made obvious the false
-      </p>
-      <p><%= lorem.paragraph %></p>
-      <small>&mdash; Some Important Guy</small>
-    </blockquote>
-    <p>Flame and all, though in slight motion, still maintains a permanent obliquity with reference to the room; though, in truth, infallibly straight itself, it but made obvious the false, lying levels among which it hung.</p>
-    <h3>Example Subhead</h3>
-    <p>The lamp alarms and frightens Jonah; as lying in his berth his tormented eyes roll round the place, and this thus far successful fugitive finds no refuge for</p>
-    
-    <pre class="prettyprint linenums:52">
-      
-      class Voila {
-      public:
-        // Voila
-        static const string VOILA = "Voila";
-
-        // will not interfere with embedded tags.
-      }
-      </pre>
-    <p>Flame and all, though in slight motion, still maintains a permanent obliquity with reference to the room; though, in truth, infallibly straight itself, it but made obvious the false, lying levels among which it hung.</p>  
-  </div>
-  <!-- /article-body -->
-  
-  <footer>
-    <time class="published updated" pubdate="" datetime="2011-05-06">May 6th, 2011</time>
-  </footer>
-</article>
-
-
-<% 3.times do %>
-
-<article>
-  <header>
-    <h1><a href="article.html" title=""><%= lorem.sentence %></a></h1>
-  </header>
-  
-  <div class="l-article-body">
-    <% 3.times do %>
-      <p><%= lorem.paragraph %></p>
-    <% end %>
-    <%= link_to 'Continue Reading', 'article.html' %>
-  </div>
-  <!-- /article-body -->
-  
-  <footer>
-    <time class="published updated" pubdate="" datetime="2011-05-06">May 6th, 2011</time>
-    <ul class="tag-list">
-      <li class="icon">
-        <i class="icon-tags"></i>
-      </li>
-      <li class="tag">
-        <%= link_to 'Code' %>
-      </li>
-
-      <li class="tag">
-        <%= link_to 'Design' %>
-      </li>
-
-      <li class="tag">
-        <%= link_to 'Writing' %>
-      </li>
-      
-    </ul>
-  </footer>
-</article>
-
+<% data.blog.articles[0...5].each do |article| %>
+  <article>
+    <header>
+      <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+    </header>
+    <div class="l-article-body">
+      <%= article.summary %>
+      <%= link_to 'Continue Reading', article.url  %>
+    </div>
+    <!-- /article-body -->
+    <footer>
+      <time class="published updated" pubdate="" datetime="<%= article.date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= article.date.strftime('%A, %b %d') %></time>
+    </footer>
+  </article>
 <% end %>
-
 <%= partial 'partials/pagination' %>

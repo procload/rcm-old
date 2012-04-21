@@ -1,2 +1,73 @@
-@import "partials/base";
+/*
+Title:      RyanMerrill.net - Default Screen Styles
+Author:     Ryan Clark Merrill, ryan@ryanmerrill.net
+Copyright:  2012, Ryan Clark Merrill.  All rights resevered
 
+Perfect Fifth:
+http://modularscale.com/scale/?px1=18&px2=32&ra1=1.618&ra2=0
+Font Size: 18px (1em) @ 1:1.618
+Important Number: 32px (1.778em) @ 1:1.618
+
+
+*/
+
+// Variables & Setup
+// --------------------------------------------------
+
+// GLOBAL VALUES
+// --------------------------------------------------
+// Links
+$linkColor:                        #08c;
+$linkHoverColor:                   darken($linkColor, 5%);
+
+//Typography
+$baseFontFamily:                   "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia, Times, "Times New Roman", serif;
+$textColor:                        #333;
+$baseFontSize:                    18px;
+$baseLineHeight:                  1.618;
+
+$headlineFontFamily:               "ff-meta-web-pro-1", "ff-meta-web-pro-2",  "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;;
+
+$monospace-font-family:            Menlo, Monaco, "Courier New", monospace;
+//Borders
+$borderColor:                      #EFEFEF;
+
+//Social media colors
+$twitterColor:                     #33CCFF;
+$dribbbleColor:                    #EA4C89;
+$githubColor:                      #4183C4;
+$flickrAltColor:                   #FF0084;
+$flickrColor:                      #0063DC;
+$rdioColor:                        #007DC3;
+$linkedinColor:                    #0181B2;
+$facebookColor:                    #3C5A94;
+
+// GRID
+// --------------------------------------------------
+
+/* Susy Grid Configuration */
+$total-cols: 12;
+$col-width: 5em; // Loosely taken from modular scale
+$gutter-width: 1em;
+$side-gutter-width: 1em; // Loosely taken from modular scale
+
+// Imports & Includes
+// --------------------------------------------------
+
+//Reset Styles
+@import "compass/reset";
+
+// Compass files to load
+@import "susy";
+@import "compass/css3";
+@import "compass/typography/links";
+
+// My Mixins
+@import "partials/custom_mixins";
+
+
+@import "partials/global";
+@import "partials/code";
+@import "partials/layout";
+@import "partials/prettify";
+@import "partials/font_awesome";

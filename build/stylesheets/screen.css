@@ -11,7 +11,6 @@ Important Number: 32px (1.778em) @ 1:1.618
 
 */
 /* Susy Grid Configuration */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,55 +31,47 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1; }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 101, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 114, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 /* One-true layout hack for equal height columns */
-/* line 1, ../../source/stylesheets/partials/_global.scss */
 .container {
   *zoom: 1;
   margin: auto;
   width: 73em;
   max-width: 100%; }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .container:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 9, ../../source/stylesheets/partials/_global.scss */
+html {
+  background: #F0F0F0; }
+
 body {
   width: 100%;
   font-family: "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia, Times, "Times New Roman", serif;
@@ -93,9 +84,8 @@ body {
 @font-face {
   font-family: "Font Awesome";
   src: url('/fonts/fonts/font-awesome/fontawesome-webfont.eot');
-  src: url('/fonts/fonts/font-awesome/fontawesome-webfont.eot?iefix') format('eot'), url('/fonts/fonts/font-awesome/fontawesome-webfont.woff') format('"fonts/font-awesome/fontawesome-webfont.ttf"'), url('/fonts/fonts/font-awesome/fontawesome-webfont.svg') format('"fonts/font-awesome/fontawesome-webfont.svgz"'); }
+  src: url('/fonts/fonts/font-awesome/fontawesome-webfont.eot?#iefix') format('eot'), url('/fonts/fonts/font-awesome/fontawesome-webfont.woff') format('woff'), url('/fonts/fonts/font-awesome/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fonts/font-awesome/fontawesome-webfont.svg') format('svg'); }
 
-/* line 30, ../../source/stylesheets/partials/_global.scss */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -104,52 +94,41 @@ h4, h5, h6 {
   font-weight: bold;
   line-height: 1.25; }
 
-/* line 38, ../../source/stylesheets/partials/_global.scss */
 h1 {
   font-size: 2.618em; }
 
-/* line 42, ../../source/stylesheets/partials/_global.scss */
 h2 {
   font-size: 1.778em;
   line-height: 1.618; }
 
-/* line 47, ../../source/stylesheets/partials/_global.scss */
 h3 {
   line-height: 1.618;
   font-size: 1.099em; }
 
-/* line 52, ../../source/stylesheets/partials/_global.scss */
 h4 {
   font-size: 1em; }
 
-/* line 56, ../../source/stylesheets/partials/_global.scss */
 h5 {
   font-size: .679em; }
 
-/* line 60, ../../source/stylesheets/partials/_global.scss */
 h6 {
   text-transform: uppercase;
   font-size: .679em; }
 
-/* line 65, ../../source/stylesheets/partials/_global.scss */
 p {
   font-size: 1em; }
 
-/* line 69, ../../source/stylesheets/partials/_global.scss */
 img {
   border: 1px solid #000;
   max-width: 100%; }
 
-/* line 74, ../../source/stylesheets/partials/_global.scss */
 .intro {
   font-size: 1.36em;
   /* 4.236 - 2.876 */ }
   @media only screen and (min-width: 1024px) {
-    /* line 74, ../../source/stylesheets/partials/_global.scss */
     .intro {
       font-size: 1.618em; } }
 
-/* line 79, ../../source/stylesheets/partials/_global.scss */
 blockquote {
   margin: 0 0 1.618em 0;
   font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -160,46 +139,36 @@ blockquote {
   margin-left: 4.5%;
   font-style: italic;
   font-size: .939em; }
-  /* line 89, ../../source/stylesheets/partials/_global.scss */
   blockquote small {
     font-weight: 800;
     font-style: normal; }
 
-/* line 95, ../../source/stylesheets/partials/_global.scss */
 .gist {
   font-size: 0.722em;
   margin: 1.618em 0 2.618em 0; }
 
 /* Custom text-selection colors (remove any text shadows) */
-/* line 101, ../../source/stylesheets/partials/_global.scss */
 ::-moz-selection {
   background: #0088cc;
   color: #fff;
   text-shadow: none; }
 
-/* line 102, ../../source/stylesheets/partials/_global.scss */
 ::selection {
   background: #0088cc;
   color: #fff;
   text-shadow: none; }
 
-/* line 107, ../../source/stylesheets/partials/_global.scss */
 a {
   text-decoration: none;
   color: #0088cc; }
-  /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #0088cc; }
-  /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
     color: #0077b3; }
-  /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #0077b3; }
-  /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #0077b3; }
-  /* line 110, ../../source/stylesheets/partials/_global.scss */
   a.continue-reading {
     font-size: 0.778em;
     background: #0088cc;
@@ -207,12 +176,10 @@ a {
     padding: .42em;
     border: 1px solid #0077b3; }
 
-/* line 6, ../../source/stylesheets/partials/_code.scss */
 code, pre {
   padding: 0;
   font-family: Menlo, Monaco, "Courier New", monospace; }
 
-/* line 12, ../../source/stylesheets/partials/_code.scss */
 pre {
   display: block;
   background-color: #F8F8FF;
@@ -222,7 +189,6 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word; }
-  /* line 22, ../../source/stylesheets/partials/_code.scss */
   pre.prettyprint {
     padding: .679em;
     margin: 0 0 1.618em;
@@ -230,12 +196,10 @@ pre {
     font-size: .679em;
     margin-bottom: 2.618em; }
 
-/* line 32, ../../source/stylesheets/partials/_code.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
 
-/* line 4, ../../source/stylesheets/partials/_layout.scss */
 .l-header {
   font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
   clear: both;
@@ -245,7 +209,6 @@ pre {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 1.618em;
   margin-bottom: 1.618em; }
-  /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
   .l-header:before, .l-header:after {
     visibility: hidden;
     display: block;
@@ -253,47 +216,36 @@ pre {
     content: ".";
     clear: both;
     height: 0; }
-  /* line 14, ../../source/stylesheets/partials/_layout.scss */
   .l-header h1 a {
     color: #333333; }
-    /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
     .l-header h1 a:visited {
       color: #333333; }
-    /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
     .l-header h1 a:focus {
       color: #0088cc; }
-    /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
     .l-header h1 a:hover {
       color: #0088cc; }
-    /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
     .l-header h1 a:active {
       color: #0088cc; }
-  /* line 19, ../../source/stylesheets/partials/_layout.scss */
   .l-header h3 {
     font-weight: normal;
     padding-bottom: 1.618em; }
-  /* line 24, ../../source/stylesheets/partials/_layout.scss */
   .l-header hgroup {
     /* Media Queries */ }
     @media only screen and (min-width: 561px) {
-      /* line 24, ../../source/stylesheets/partials/_layout.scss */
       .l-header hgroup {
         display: inline;
         float: left;
         width: 66.197%;
         margin-right: 1.408%; } }
     @media only screen and (min-width: 1024px) {
-      /* line 24, ../../source/stylesheets/partials/_layout.scss */
       .l-header hgroup {
         display: inline;
         float: left;
         width: 66.197%;
         margin-right: 1.408%; } }
-  /* line 31, ../../source/stylesheets/partials/_layout.scss */
   .l-header nav {
     /* Media Queries */ }
     @media only screen and (min-width: 561px) {
-      /* line 31, ../../source/stylesheets/partials/_layout.scss */
       .l-header nav {
         display: inline;
         float: left;
@@ -304,7 +256,6 @@ pre {
         margin-right: 0;
         #margin-left: -1em; } }
     @media only screen and (min-width: 1024px) {
-      /* line 31, ../../source/stylesheets/partials/_layout.scss */
       .l-header nav {
         display: inline;
         float: left;
@@ -314,14 +265,12 @@ pre {
         float: right;
         margin-right: 0;
         #margin-left: -1em; } }
-  /* line 44, ../../source/stylesheets/partials/_layout.scss */
   .l-header ul {
     *zoom: 1;
     float: left;
     width: 100%;
     margin-bottom: 1.618em;
     /* Media Queries */ }
-    /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-header ul:before, .l-header ul:after {
       visibility: hidden;
       display: block;
@@ -330,31 +279,25 @@ pre {
       clear: both;
       height: 0; }
     @media only screen and (min-width: 561px) {
-      /* line 44, ../../source/stylesheets/partials/_layout.scss */
       .l-header ul {
         float: right;
         margin-top: 2.618em; } }
     @media only screen and (min-width: 1024px) {
-      /* line 44, ../../source/stylesheets/partials/_layout.scss */
       .l-header ul {
         float: right;
         margin-top: 2.618em; } }
-    /* line 60, ../../source/stylesheets/partials/_layout.scss */
     .l-header ul li {
       float: left;
       margin-right: 1.099em;
       /* Media Queries */ }
       @media only screen and (min-width: 561px) {
-        /* line 60, ../../source/stylesheets/partials/_layout.scss */
         .l-header ul li {
           margin-right: 0;
           width: 33%; } }
       @media only screen and (min-width: 1024px) {
-        /* line 60, ../../source/stylesheets/partials/_layout.scss */
         .l-header ul li {
           margin-right: 0;
           width: 33%; } }
-      /* line 75, ../../source/stylesheets/partials/_layout.scss */
       .l-header ul li a {
         font-weight: bold;
         color: #333333;
@@ -364,24 +307,19 @@ pre {
         font-size: 1.099em;
         /* Media Queries */ }
         @media only screen and (min-width: 561px) {
-          /* line 75, ../../source/stylesheets/partials/_layout.scss */
           .l-header ul li a {
             float: right; } }
         @media only screen and (min-width: 1024px) {
-          /* line 75, ../../source/stylesheets/partials/_layout.scss */
           .l-header ul li a {
             float: right; } }
-        /* line 87, ../../source/stylesheets/partials/_layout.scss */
         .l-header ul li a.current {
           border-bottom: 5px solid #0088cc; }
 
-/* line 101, ../../source/stylesheets/partials/_layout.scss */
 .l-content {
   clear: both;
   margin-left: 1.37%;
   margin-right: 1.37%;
   *zoom: 1; }
-  /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
   .l-content:before, .l-content:after {
     visibility: hidden;
     display: block;
@@ -391,26 +329,21 @@ pre {
     height: 0; }
 
 @media only screen and (min-width: 1024px) {
-  /* line 117, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.articles {
     display: inline;
     float: left;
     width: 83.099%;
     margin-right: 1.408%; } }
 @media only screen and (min-width: 1024px) {
-  /* line 122, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.article > article {
     padding-left: 8.219%;
     padding-right: 8.219%; } }
 @media only screen and (min-width: 1024px) {
-  /* line 129, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about > article {
     padding-left: 8.219%;
     padding-right: 8.219%; } }
-/* line 132, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body.about > article .article-body {
   *zoom: 1; }
-  /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
   .l-page-body.about > article .article-body:before, .l-page-body.about > article .article-body:after {
     visibility: hidden;
     display: block;
@@ -418,36 +351,29 @@ pre {
     content: ".";
     clear: both;
     height: 0; }
-/* line 136, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body.about .about-text {
   /* Media Queries */ }
   @media only screen and (min-width: 561px) {
-    /* line 136, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .about-text {
       display: inline;
       float: left;
       width: 49.296%;
       margin-right: 1.408%; } }
   @media only screen and (min-width: 1024px) {
-    /* line 136, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .about-text {
       display: inline;
       float: left;
       width: 49.153%;
       margin-right: 1.695%; } }
-/* line 142, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body.about .write-me {
   margin: 1.618em 0 2.618em 0; }
   @media only screen and (min-width: 1024px) {
-    /* line 142, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .write-me {
       background: transparent url('/images/parts/icons/ico-write-me.png') no-repeat 12px;
       padding-left: 16.438%; } }
-/* line 151, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body.about .personal-details {
   /* Media Queries */ }
   @media only screen and (min-width: 561px) {
-    /* line 151, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details {
       display: inline;
       float: left;
@@ -458,7 +384,6 @@ pre {
       margin-right: 0;
       #margin-left: -1em; } }
   @media only screen and (min-width: 1024px) {
-    /* line 151, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details {
       display: inline;
       float: left;
@@ -468,183 +393,128 @@ pre {
       float: right;
       margin-right: 0;
       #margin-left: -1em; } }
-  /* line 164, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .social-media li {
     float: left;
     width: 33%; }
-  /* line 169, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .twitter {
     color: #33ccff; }
-    /* line 171, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .twitter a {
       color: #33ccff; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .twitter a:visited {
         color: #33ccff; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .twitter a:focus {
         color: deepskyblue; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .twitter a:hover {
         color: deepskyblue; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .twitter a:active {
         color: deepskyblue; }
-  /* line 175, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .github {
     color: #4183c4; }
-    /* line 177, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .github a {
       color: #4183c4; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .github a:visited {
         color: #4183c4; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .github a:focus {
         color: #3269a0; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .github a:hover {
         color: #3269a0; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .github a:active {
         color: #3269a0; }
-  /* line 182, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .dribbble {
     color: #ea4c89; }
-    /* line 184, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .dribbble a {
       color: #ea4c89; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .dribbble a:visited {
         color: #ea4c89; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .dribbble a:focus {
         color: #e51e6b; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .dribbble a:hover {
         color: #e51e6b; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .dribbble a:active {
         color: #e51e6b; }
-  /* line 189, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .flickr {
     color: #ff0084; }
-    /* line 191, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .flickr a {
       color: #0063dc; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .flickr a:visited {
         color: #0063dc; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .flickr a:focus {
         color: #004ca9; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .flickr a:hover {
         color: #004ca9; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .flickr a:active {
         color: #004ca9; }
-  /* line 196, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .rdio {
     color: #007dc3; }
-    /* line 198, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .rdio a {
       color: #007dc3; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .rdio a:visited {
         color: #007dc3; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .rdio a:focus {
         color: #005c90; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .rdio a:hover {
         color: #005c90; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .rdio a:active {
         color: #005c90; }
-  /* line 203, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .linkedin {
     color: #0181b2; }
-    /* line 205, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .linkedin a {
       color: #0181b2; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .linkedin a:visited {
         color: #0181b2; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .linkedin a:focus {
         color: #015c7f; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .linkedin a:hover {
         color: #015c7f; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .linkedin a:active {
         color: #015c7f; }
-  /* line 211, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body.about .personal-details .facebook {
     color: #3c5a94; }
-    /* line 213, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body.about .personal-details .facebook a {
       color: #3c5a94; }
-      /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .facebook a:visited {
         color: #3c5a94; }
-      /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .facebook a:focus {
         color: #2d4470; }
-      /* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .facebook a:hover {
         color: #2d4470; }
-      /* line 27, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
       .l-page-body.about .personal-details .facebook a:active {
         color: #2d4470; }
-/* line 221, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body > article {
   margin-bottom: 1.618em;
   /* Media Queries */ }
   @media only screen and (min-width: 1024px) {
-    /* line 221, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article {
       padding-left: 10.169%; } }
-  /* line 228, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article h1 {
     font-size: 1.778em;
     line-height: 1.519em;
     /* 2.618 - 1.099 */
     margin-bottom: .382em; }
-  /* line 234, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article h2 {
     font-size: 1.099em;
     font-weight: normal; }
-  /* line 239, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article header {
-    margin-bottom: 1.618em; }
-  /* line 243, ../../source/stylesheets/partials/_layout.scss */
+    margin-bottom: .618em; }
   .l-page-body > article p {
     margin: 0 0 1em; }
-  /* line 247, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article .l-article-body {
     margin-bottom: 1.618em; }
-    /* line 249, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article .l-article-body h2 {
       font-weight: bold; }
-    /* line 252, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article .l-article-body img {
       border: 3px solid #333;
       margin-top: .679em;
       margin-bottom: 1.618em;
       width: 111%;
       max-width: 111%; }
-      /* line 258, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body > article .l-article-body img.offset-left {
         margin-left: -11.4%; }
-  /* line 265, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article > footer {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     font-size: .679em;
     *zoom: 1;
     padding: 1em 0; }
-    /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-page-body > article > footer:before, .l-page-body > article > footer:after {
       visibility: hidden;
       display: block;
@@ -652,53 +522,42 @@ pre {
       content: ".";
       clear: both;
       height: 0; }
-    /* line 271, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article > footer i {
       float: left;
       display: block;
       color: #0088cc;
       margin-right: 1em; }
-    /* line 277, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article > footer .tag-list {
+      text-transform: capitalize;
+      font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
       float: right;
       display: block; }
-      /* line 281, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body > article > footer .tag-list li {
         float: left;
         margin-right: 1.618em; }
-        /* line 284, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body > article > footer .tag-list li.icon {
           text-align: right;
           margin: 0; }
-        /* line 288, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body > article > footer .tag-list li:last-child {
           margin-right: 0; }
-  /* line 299, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece header h2 {
     font-size: 1em;
     font-family: "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia, Times, "Times New Roman", serif; }
-  /* line 305, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece .article-body {
     text-align: center; }
-    /* line 307, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article.workpiece .article-body h3 {
       text-align: left;
       margin-bottom: .618em; }
-    /* line 311, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body > article.workpiece .article-body img {
       margin-bottom: 2.618em;
       border: 1px solid #000; }
-      /* line 314, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body > article.workpiece .article-body img.logo {
         border: none; }
-      /* line 317, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body > article.workpiece .article-body img.computer {
         border: none;
         margin-top: -22.332em; }
-  /* line 324, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece.wedding .article-body > div {
     *zoom: 1; }
-    /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-page-body > article.workpiece.wedding .article-body > div:before, .l-page-body > article.workpiece.wedding .article-body > div:after {
       visibility: hidden;
       display: block;
@@ -706,26 +565,20 @@ pre {
       content: ".";
       clear: both;
       height: 0; }
-  /* line 327, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece.wedding .invite, .l-page-body > article.workpiece.wedding .std {
     width: 45%; }
-  /* line 330, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece.wedding .invite {
     float: left; }
-  /* line 333, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece.wedding .std {
     float: right; }
-  /* line 337, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body > article.workpiece.wedding img.computer {
     margin-top: 0; }
-/* line 346, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body .l-pagination {
   padding-left: 10.169%;
   font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: bold;
   margin-bottom: 1.618em;
   *zoom: 1; }
-  /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
   .l-page-body .l-pagination:before, .l-page-body .l-pagination:after {
     visibility: hidden;
     display: block;
@@ -733,14 +586,12 @@ pre {
     content: ".";
     clear: both;
     height: 0; }
-  /* line 353, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body .l-pagination a {
     float: right;
     -webkit-appearance: none;
     -webkit-box-align: center;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
@@ -759,15 +610,13 @@ pre {
     background-image: -o-linear-gradient(#4096ee, #1270cf);
     background-image: -ms-linear-gradient(#4096ee, #1270cf);
     background-image: linear-gradient(#4096ee, #1270cf);
-    -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
     -ms-border-radius: 4px;
-    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
-    -moz-box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0;
     -webkit-box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0;
-    -o-box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0;
+    -moz-box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0;
     box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0;
     border-width: 1px;
     border-style: solid;
@@ -775,17 +624,15 @@ pre {
     border-right-color: #1063b8;
     border-bottom-color: #1063b8;
     border-left-color: #1063b8;
-    -moz-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    /* line 355, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .l-pagination a i {
       margin-left: 5px; }
-    /* line 183, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-page-body .l-pagination a:visited {
       color: white; }
-    /* line 188, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-page-body .l-pagination a:hover, .l-page-body .l-pagination a:focus {
       color: white;
       border: 1px solid #0f5baa;
@@ -796,20 +643,16 @@ pre {
       background-image: -o-linear-gradient(#2989ec, #0f5baa);
       background-image: -ms-linear-gradient(#2989ec, #0f5baa);
       background-image: linear-gradient(#2989ec, #0f5baa); }
-    /* line 202, ../../source/stylesheets/partials/_custom_mixins.scss */
     .l-page-body .l-pagination a:active {
       border: 1px solid #06213e;
-      -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 4px;
       -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 4px;
-      -o-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 4px;
+      -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 4px;
       box-shadow: inset rgba(0, 0, 0, 0.6) 0 1px 4px; }
-/* line 362, ../../source/stylesheets/partials/_layout.scss */
 .l-page-body .portfolio-list {
   margin: 0 0 7.53em 0;
   padding: 0;
   width: 100%;
   *zoom: 1; }
-  /* line 18, ../../source/stylesheets/partials/_custom_mixins.scss */
   .l-page-body .portfolio-list:before, .l-page-body .portfolio-list:after {
     visibility: hidden;
     display: block;
@@ -817,7 +660,6 @@ pre {
     content: ".";
     clear: both;
     height: 0; }
-  /* line 367, ../../source/stylesheets/partials/_layout.scss */
   .l-page-body .portfolio-list .portfolio-item {
     float: left;
     width: 40%;
@@ -826,109 +668,84 @@ pre {
     list-style-type: none;
     text-align: center; }
     @media only screen and (min-width: 561px) {
-      /* line 367, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item {
         width: 27%; } }
     @media only screen and (min-width: 1024px) {
-      /* line 367, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item {
         width: 27%; } }
-    /* line 378, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item h2 {
       font-size: 1.099em; }
-    /* line 381, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item h3 {
       font-size: .679em;
       font-style: italic;
       font-weight: normal; }
-    /* line 386, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item img {
       max-width: 100%; }
-    /* line 389, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item.system7 {
       padding-top: 0.556em; }
-      /* line 391, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item.system7 h2 {
         padding-top: 1em; }
-    /* line 396, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item.lower9 {
       padding-top: 1.444em; }
-      /* line 398, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item.lower9 h2 {
         padding-top: 1.667em; }
-    /* line 403, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item.chub {
       clear: both;
       /* Media Queries */
       padding-top: 3.556em; }
       @media only screen and (min-width: 561px) {
-        /* line 403, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.chub {
           clear: none; } }
       @media only screen and (min-width: 1024px) {
-        /* line 403, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.chub {
           clear: none; } }
-      /* line 411, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item.chub h2 {
         padding-top: 3.556em; }
-    /* line 415, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item.wedding {
       width: 23%;
       margin-left: 10%;
       margin-top: 1.618em;
       /* Media Queries */ }
       @media only screen and (min-width: 561px) {
-        /* line 415, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.wedding {
           clear: both;
           width: 15%;
           margin-top: 4.236em;
           margin-left: 15%; } }
       @media only screen and (min-width: 1024px) {
-        /* line 415, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.wedding {
           clear: both;
           width: 15%;
           margin-top: 4.236em;
           margin-left: 15%; } }
-      /* line 436, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item.wedding h2 {
         padding-top: 1.333em; }
-    /* line 441, ../../source/stylesheets/partials/_layout.scss */
     .l-page-body .portfolio-list .portfolio-item.penn-oaks {
       width: 30%;
       /* Media Queries */ }
       @media only screen and (min-width: 561px) {
-        /* line 441, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.penn-oaks {
           margin-top: 6em;
           margin-left: 15%;
           width: 25%; }
-          /* line 452, ../../source/stylesheets/partials/_layout.scss */
           .l-page-body .portfolio-list .portfolio-item.penn-oaks h2 {
             padding-top: 1.444em; } }
       @media only screen and (min-width: 1024px) {
-        /* line 441, ../../source/stylesheets/partials/_layout.scss */
         .l-page-body .portfolio-list .portfolio-item.penn-oaks {
           margin-top: 6em;
           margin-left: 15%;
           width: 25%; }
-          /* line 460, ../../source/stylesheets/partials/_layout.scss */
           .l-page-body .portfolio-list .portfolio-item.penn-oaks h2 {
             padding-top: 2.444em; } }
-      /* line 464, ../../source/stylesheets/partials/_layout.scss */
       .l-page-body .portfolio-list .portfolio-item.penn-oaks img {
         border: 3px solid #333; }
 
-/* line 477, ../../source/stylesheets/partials/_layout.scss */
 .l-footer {
   text-align: right;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.06);
   font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", helvetica, arial, sans-serif;
   padding: .618em 0; }
-  /* line 483, ../../source/stylesheets/partials/_layout.scss */
   .l-footer > div {
     clear: both;
     margin-left: 1.37%;
@@ -937,141 +754,104 @@ pre {
 
 /* Pretty printing styles. Used with prettify.js. */
 /* SPAN elements with the classes below are added by prettyprint. */
-/* line 5, ../../source/stylesheets/partials/prettify.css */
 .pln {
   color: #000; }
 
 /* plain text */
 @media screen {
-  /* line 8, ../../source/stylesheets/partials/prettify.css */
   .str {
     color: #080; }
 
   /* string content */
-  /* line 9, ../../source/stylesheets/partials/prettify.css */
   .kwd {
     color: #008; }
 
   /* a keyword */
-  /* line 10, ../../source/stylesheets/partials/prettify.css */
   .com {
     color: #800; }
 
   /* a comment */
-  /* line 11, ../../source/stylesheets/partials/prettify.css */
   .typ {
     color: #606; }
 
   /* a type name */
-  /* line 12, ../../source/stylesheets/partials/prettify.css */
   .lit {
     color: #066; }
 
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
-  /* line 14, ../../source/stylesheets/partials/prettify.css */
   .pun, .opn, .clo {
     color: #660; }
 
-  /* line 15, ../../source/stylesheets/partials/prettify.css */
   .tag {
     color: #008; }
 
   /* a markup tag name */
-  /* line 16, ../../source/stylesheets/partials/prettify.css */
   .atn {
     color: #606; }
 
   /* a markup attribute name */
-  /* line 17, ../../source/stylesheets/partials/prettify.css */
   .atv {
     color: #080; }
 
   /* a markup attribute value */
-  /* line 18, ../../source/stylesheets/partials/prettify.css */
   .dec, .var {
     color: #606; }
 
   /* a declaration; a variable name */
-  /* line 19, ../../source/stylesheets/partials/prettify.css */
   .fun {
     color: red; }
 
   /* a function name */ }
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
-  /* line 24, ../../source/stylesheets/partials/prettify.css */
   .str {
     color: #060; }
 
-  /* line 25, ../../source/stylesheets/partials/prettify.css */
   .kwd {
     color: #006;
     font-weight: bold; }
 
-  /* line 26, ../../source/stylesheets/partials/prettify.css */
   .com {
     color: #600;
     font-style: italic; }
 
-  /* line 27, ../../source/stylesheets/partials/prettify.css */
   .typ {
     color: #404;
     font-weight: bold; }
 
-  /* line 28, ../../source/stylesheets/partials/prettify.css */
   .lit {
     color: #044; }
 
-  /* line 29, ../../source/stylesheets/partials/prettify.css */
   .pun, .opn, .clo {
     color: #440; }
 
-  /* line 30, ../../source/stylesheets/partials/prettify.css */
   .tag {
     color: #006;
     font-weight: bold; }
 
-  /* line 31, ../../source/stylesheets/partials/prettify.css */
   .atn {
     color: #404; }
 
-  /* line 32, ../../source/stylesheets/partials/prettify.css */
   .atv {
     color: #060; } }
 /* Put a border around prettyprinted code snippets. */
-/* line 36, ../../source/stylesheets/partials/prettify.css */
 pre.prettyprint {
   padding: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
 /* Specify class=linenums on a pre to get line numbering */
-/* line 39, ../../source/stylesheets/partials/prettify.css */
 ol.linenums {
   margin-top: 0;
   margin-bottom: 0; }
 
 /* IE indents via margin-left */
-/* line 47, ../../source/stylesheets/partials/prettify.css */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L5,
-li.L6,
-li.L7,
-li.L8 {
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
   list-style-type: none; }
-
-/* Alternate shading for lines */
-/* line 53, ../../source/stylesheets/partials/prettify.css */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
+li.L1, li.L3, li.L5, li.L7, li.L9 {
   background: #f3f3ff; }
 
+/* Alternate shading for lines */
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -1103,7 +883,6 @@ li.L9 {
   font-style: normal; }
 
 /* sprites.less reset */
-/* line 43, ../../source/stylesheets/partials/_font_awesome.scss */
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline;
@@ -1115,14 +894,12 @@ li.L9 {
   background-position: 0% 0%;
   background-repeat: repeat; }
 
-/* line 54, ../../source/stylesheets/partials/_font_awesome.scss */
 li[class^="icon-"],
 li[class*=" icon-"] {
   display: block; }
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-/* line 61, ../../source/stylesheets/partials/_font_awesome.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: FontAwesome;
@@ -1131,610 +908,462 @@ li[class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit; }
 
-/* line 70, ../../source/stylesheets/partials/_font_awesome.scss */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit; }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 76, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-large:before {
   vertical-align: top;
   font-size: 4/3em; }
 
-/* line 83, ../../source/stylesheets/partials/_font_awesome.scss */
 .btn [class^="icon-"],
 .btn [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em; }
 
-/* line 91, ../../source/stylesheets/partials/_font_awesome.scss */
 li [class^="icon-"],
 li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center; }
-/* line 97, ../../source/stylesheets/partials/_font_awesome.scss */
 li .icon-large[class^="icon-"],
 li .icon-large[class*=" icon-"] {
   /* 1.5 increased font size for icon-large * 1.25 width */
   width: 1.875em; }
 
-/* line 104, ../../source/stylesheets/partials/_font_awesome.scss */
 li[class^="icon-"],
 li[class*=" icon-"] {
   margin-left: 0;
   list-style-type: none; }
-  /* line 108, ../../source/stylesheets/partials/_font_awesome.scss */
   li[class^="icon-"]:before,
   li[class*=" icon-"]:before {
     text-indent: -2em;
     text-align: center; }
-  /* line 112, ../../source/stylesheets/partials/_font_awesome.scss */
   li[class^="icon-"].icon-large:before,
   li[class*=" icon-"].icon-large:before {
     text-indent: -4/3em; }
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-/* line 119, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-glass:before {
   content: "\f000"; }
 
-/* line 120, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-music:before {
   content: "\f001"; }
 
-/* line 121, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-search:before {
   content: "\f002"; }
 
-/* line 122, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-envelope:before {
   content: "\f003"; }
 
-/* line 123, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-heart:before {
   content: "\f004"; }
 
-/* line 124, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-star:before {
   content: "\f005"; }
 
-/* line 125, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-star-empty:before {
   content: "\f006"; }
 
-/* line 126, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-user:before {
   content: "\f007"; }
 
-/* line 127, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-film:before {
   content: "\f008"; }
 
-/* line 128, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-th-large:before {
   content: "\f009"; }
 
-/* line 129, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-th:before {
   content: "\f00a"; }
 
-/* line 130, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-th-list:before {
   content: "\f00b"; }
 
-/* line 131, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-ok:before {
   content: "\f00c"; }
 
-/* line 132, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-remove:before {
   content: "\f00d"; }
 
-/* line 133, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-zoom-in:before {
   content: "\f00e"; }
 
-/* line 135, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-zoom-out:before {
   content: "\f010"; }
 
-/* line 136, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-off:before {
   content: "\f011"; }
 
-/* line 137, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-signal:before {
   content: "\f012"; }
 
-/* line 138, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-cog:before {
   content: "\f013"; }
 
-/* line 139, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-trash:before {
   content: "\f014"; }
 
-/* line 140, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-home:before {
   content: "\f015"; }
 
-/* line 141, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-file:before {
   content: "\f016"; }
 
-/* line 142, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-time:before {
   content: "\f017"; }
 
-/* line 143, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-road:before {
   content: "\f018"; }
 
-/* line 144, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-download-alt:before {
   content: "\f019"; }
 
-/* line 145, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-download:before {
   content: "\f01a"; }
 
-/* line 146, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-upload:before {
   content: "\f01b"; }
 
-/* line 147, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-inbox:before {
   content: "\f01c"; }
 
-/* line 148, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-play-circle:before {
   content: "\f01d"; }
 
-/* line 149, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-repeat:before {
   content: "\f01e"; }
 
 /* \f020 is not a valid unicode character. all shifted one down */
-/* line 152, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-refresh:before {
   content: "\f021"; }
 
-/* line 153, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-list-alt:before {
   content: "\f022"; }
 
-/* line 154, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-lock:before {
   content: "\f023"; }
 
-/* line 155, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-flag:before {
   content: "\f024"; }
 
-/* line 156, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-headphones:before {
   content: "\f025"; }
 
-/* line 157, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-volume-off:before {
   content: "\f026"; }
 
-/* line 158, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-volume-down:before {
   content: "\f027"; }
 
-/* line 159, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-volume-up:before {
   content: "\f028"; }
 
-/* line 160, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-qrcode:before {
   content: "\f029"; }
 
-/* line 161, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-barcode:before {
   content: "\f02a"; }
 
-/* line 162, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-tag:before {
   content: "\f02b"; }
 
-/* line 163, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-tags:before {
   content: "\f02c"; }
 
-/* line 164, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-book:before {
   content: "\f02d"; }
 
-/* line 165, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-bookmark:before {
   content: "\f02e"; }
 
-/* line 166, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-print:before {
   content: "\f02f"; }
 
-/* line 168, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-camera:before {
   content: "\f030"; }
 
-/* line 169, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-font:before {
   content: "\f031"; }
 
-/* line 170, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-bold:before {
   content: "\f032"; }
 
-/* line 171, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-italic:before {
   content: "\f033"; }
 
-/* line 172, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-text-height:before {
   content: "\f034"; }
 
-/* line 173, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-text-width:before {
   content: "\f035"; }
 
-/* line 174, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-align-left:before {
   content: "\f036"; }
 
-/* line 175, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-align-center:before {
   content: "\f037"; }
 
-/* line 176, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-align-right:before {
   content: "\f038"; }
 
-/* line 177, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-align-justify:before {
   content: "\f039"; }
 
-/* line 178, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-list:before {
   content: "\f03a"; }
 
-/* line 179, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-indent-left:before {
   content: "\f03b"; }
 
-/* line 180, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-indent-right:before {
   content: "\f03c"; }
 
-/* line 181, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-facetime-video:before {
   content: "\f03d"; }
 
-/* line 182, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-picture:before {
   content: "\f03e"; }
 
-/* line 184, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-pencil:before {
   content: "\f040"; }
 
-/* line 185, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-map-marker:before {
   content: "\f041"; }
 
-/* line 186, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-adjust:before {
   content: "\f042"; }
 
-/* line 187, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-tint:before {
   content: "\f043"; }
 
-/* line 188, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-edit:before {
   content: "\f044"; }
 
-/* line 189, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-share:before {
   content: "\f045"; }
 
-/* line 190, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-check:before {
   content: "\f046"; }
 
-/* line 191, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-move:before {
   content: "\f047"; }
 
-/* line 192, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-step-backward:before {
   content: "\f048"; }
 
-/* line 193, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-fast-backward:before {
   content: "\f049"; }
 
-/* line 194, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-backward:before {
   content: "\f04a"; }
 
-/* line 195, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-play:before {
   content: "\f04b"; }
 
-/* line 196, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-pause:before {
   content: "\f04c"; }
 
-/* line 197, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-stop:before {
   content: "\f04d"; }
 
-/* line 198, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-forward:before {
   content: "\f04e"; }
 
-/* line 200, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-fast-forward:before {
   content: "\f050"; }
 
-/* line 201, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-step-forward:before {
   content: "\f051"; }
 
-/* line 202, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-eject:before {
   content: "\f052"; }
 
-/* line 203, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-chevron-left:before {
   content: "\f053"; }
 
-/* line 204, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-chevron-right:before {
   content: "\f054"; }
 
-/* line 205, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-plus-sign:before {
   content: "\f055"; }
 
-/* line 206, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-minus-sign:before {
   content: "\f056"; }
 
-/* line 207, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-remove-sign:before {
   content: "\f057"; }
 
-/* line 208, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-ok-sign:before {
   content: "\f058"; }
 
-/* line 209, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-question-sign:before {
   content: "\f059"; }
 
-/* line 210, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-info-sign:before {
   content: "\f05a"; }
 
-/* line 211, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-screenshot:before {
   content: "\f05b"; }
 
-/* line 212, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-remove-circle:before {
   content: "\f05c"; }
 
-/* line 213, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-ok-circle:before {
   content: "\f05d"; }
 
-/* line 214, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-ban-circle:before {
   content: "\f05e"; }
 
-/* line 216, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-arrow-left:before {
   content: "\f060"; }
 
-/* line 217, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-arrow-right:before {
   content: "\f061"; }
 
-/* line 218, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-arrow-up:before {
   content: "\f062"; }
 
-/* line 219, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-arrow-down:before {
   content: "\f063"; }
 
-/* line 220, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-share-alt:before {
   content: "\f064"; }
 
-/* line 221, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-resize-full:before {
   content: "\f065"; }
 
-/* line 222, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-resize-small:before {
   content: "\f066"; }
 
-/* line 223, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-plus:before {
   content: "\f067"; }
 
-/* line 224, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-minus:before {
   content: "\f068"; }
 
-/* line 225, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-asterisk:before {
   content: "\f069"; }
 
-/* line 226, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-exclamation-sign:before {
   content: "\f06a"; }
 
-/* line 227, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-gift:before {
   content: "\f06b"; }
 
-/* line 228, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-leaf:before {
   content: "\f06c"; }
 
-/* line 229, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-fire:before {
   content: "\f06d"; }
 
-/* line 230, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-eye-open:before {
   content: "\f06e"; }
 
-/* line 232, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-eye-close:before {
   content: "\f070"; }
 
-/* line 233, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-warning-sign:before {
   content: "\f071"; }
 
-/* line 234, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-plane:before {
   content: "\f072"; }
 
-/* line 235, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-calendar:before {
   content: "\f073"; }
 
-/* line 236, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-random:before {
   content: "\f074"; }
 
-/* line 237, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-comment:before {
   content: "\f075"; }
 
-/* line 238, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-magnet:before {
   content: "\f076"; }
 
-/* line 239, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-chevron-up:before {
   content: "\f077"; }
 
-/* line 240, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-chevron-down:before {
   content: "\f078"; }
 
-/* line 241, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-retweet:before {
   content: "\f079"; }
 
-/* line 242, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-shopping-cart:before {
   content: "\f07a"; }
 
-/* line 243, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-folder-close:before {
   content: "\f07b"; }
 
-/* line 244, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-folder-open:before {
   content: "\f07c"; }
 
-/* line 245, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-resize-vertical:before {
   content: "\f07d"; }
 
-/* line 246, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-resize-horizontal:before {
   content: "\f07e"; }
 
-/* line 248, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-bar-chart:before {
   content: "\f080"; }
 
-/* line 249, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-twitter-sign:before {
   content: "\f081"; }
 
-/* line 250, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-facebook-sign:before {
   content: "\f082"; }
 
-/* line 251, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-camera-retro:before {
   content: "\f083"; }
 
-/* line 252, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-key:before {
   content: "\f084"; }
 
-/* line 253, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-cogs:before {
   content: "\f085"; }
 
-/* line 254, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-comments:before {
   content: "\f086"; }
 
-/* line 255, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-thumbs-up:before {
   content: "\f087"; }
 
-/* line 256, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-thumbs-down:before {
   content: "\f088"; }
 
-/* line 257, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-star-half:before {
   content: "\f089"; }
 
-/* line 258, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-heart-empty:before {
   content: "\f08a"; }
 
-/* line 259, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-signout:before {
   content: "\f08b"; }
 
-/* line 260, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-linkedin-sign:before {
   content: "\f08c"; }
 
-/* line 261, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-pushpin:before {
   content: "\f08d"; }
 
-/* line 262, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-external-link:before {
   content: "\f08e"; }
 
-/* line 264, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-signin:before {
   content: "\f090"; }
 
-/* line 265, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-trophy:before {
   content: "\f091"; }
 
-/* line 266, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-github-sign:before {
   content: "\f092"; }
 
-/* line 267, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-upload-alt:before {
   content: "\f093"; }
 
-/* line 268, ../../source/stylesheets/partials/_font_awesome.scss */
 .icon-lemon:before {
   content: "\f094"; }

@@ -1,0 +1,17 @@
+<article>
+  <header>
+    <h1><a href="article.html" title=""><%= current_article_title %></a></h1>
+  </header>
+  
+  <div class="l-article-body">
+    <%= yield_content :blog_article %>
+    
+    <p class="twitter-link">You should follow me on <%= link_to 'Twitter', 'http://twitter.com/procload/', :target => '_blank' %>.</p>
+  </div>
+  <!-- /article-body -->
+  
+  <footer>
+    <time class="published updated" pubdate="" datetime="2011-05-06">May 6th, 2011</time>
+  </footer>
+</article>
+

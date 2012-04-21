@@ -1,0 +1,21 @@
+<%
+require 'rss/maker'
+version = "2.0" # ["0.9", "1.0", "2.0"]
+destination = "index.xml" # local file to write
+
+content = RSS::Maker.make(version) do |m|
+m.channel.title = "Ryan Clark Merrill"
+m.channel.link = "http://ryanmerrill.net/"
+m.channel.description = "I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough."
+
+m.items.do_sort = true # sort items by date
+
+  data.blog.articles.each do |article|
+    i = m.items.new_item
+    i.title = article.title
+    i.link = 'http://ryanmerrill.net' + article.url
+    i.description = article.body
+    i.date = article.date.strftime('%y-%m-%e %H:%M:%S %z')
+  end
+end
+%><%= content %>

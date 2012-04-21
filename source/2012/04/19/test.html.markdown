@@ -1,0 +1,14 @@
+--- 
+title: My Middleman Test Blog Post
+date: 2012/04/19
+tags: blogging, middleman, hello, world
+nav: blog
+---
+
+Vivamus augue turpis, rutrum a varius a, euismod ac libero. Nunc vehicula laoreet leo sed tristique. Aliquam erat volutpat. Aenean et lobortis libero. Praesent consequat leo enim. Vivamus bibendum mollis lectus sed viverra. Vivamus sit amet est purus. Vestibulum sed magna quam, vel eleifend felis. Curabitur purus purus, vehicula sit amet ultricies non, mollis ac lorem. Sed aliquet ante in tortor auctor sed sodales felis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et nisi dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ligula tellus.
+READMORE
+
+###This is my lipsum###
+Vestibulum congue mi quis nisi posuere suscipit. Pellentesque pretium rhoncus semper. Nunc a sapien a nisi faucibus suscipit. Maecenas nec orci mi, eget sollicitudin nulla. Sed id diam eu dolor cursus gravida. Sed ultricies lorem rhoncus est pharetra semper. Ut sit amet lectus nec orci scelerisque euismod.
+
+Curabitur nisi tortor, semper sed fermentum sit amet, auctor id tellus. Fusce turpis lectus, malesuada et facilisis vitae, tincidunt nec metus. Vestibulum fermentum commodo dui luctus laoreet. Fusce ultricies mi sit amet diam ornare et hendrerit sapien vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ultrices dolor in arcu fringilla hendrerit. Nunc lacinia egestas mi, non eleifend justo pretium non. Vestibulum in mauris enim. Vivamus volutpat dapibus velit a tristique.
