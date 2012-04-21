@@ -13,11 +13,6 @@ task :build do
   puts status ? "OK" : "FAILED"
 end
 
-desc "Run the preview server at http://localhost:4567"
-task :preview do
-  system("middleman server")
-end
-
 desc "deploy public directory to github pages"
 task :deploy do
   puts "## Deploying branch to Github Pages "
@@ -37,6 +32,8 @@ task :deploy do
     puts "\n## Github Pages deploy complete"
   end
 end
+
+
 
 desc "Build and deploy website"
   task :gen_deploy => [:build, :deploy] do
