@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Example Ruby RSS feed</title>
+    <link>http://www.rubyrss.com</link>
+    <description>Old news (or new olds) at Ruby RSS</description>
+    <item>
+      <title>Ruby can create RSS feeds</title>
+      <link>http://www.rubyrss.com/</link>
+      <pubDate>Sat, 21 Apr 2012 16:31:11 -0400</pubDate>
+      <dc:date>2012-04-21T16:31:11.370788-04:00</dc:date>
+    </item>
+    <item>
+      <title>Ruby can parse RSS feeds</title>
+      <link>http://www.rubyrss.com/</link>
+      <pubDate>Sun, 11 Feb 2007 14:01:00 -0500</pubDate>
+      <dc:date>2007-02-11T14:01:00-05:00</dc:date>
+    </item>
+  </channel>
+</rss>

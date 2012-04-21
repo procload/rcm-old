@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Ryan Clark Merrill</title>
+    <link>http://ryanmerrill.net/</link>
+    <description>I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough.</description>
+    <item>
+      <title>My Middleman Test Blog Post</title>
+      <link>http://ryanmerrill.net/2012/04/19/test.html</link>
+      <description>&lt;p&gt;Vivamus augue turpis, rutrum a varius a, euismod ac libero. Nunc vehicula laoreet leo sed tristique. Aliquam erat volutpat. Aenean et lobortis libero. Praesent consequat leo enim. Vivamus bibendum mollis lectus sed viverra. Vivamus sit amet est purus. Vestibulum sed magna quam, vel eleifend felis. Curabitur purus purus, vehicula sit amet ultricies non, mollis ac lorem. Sed aliquet ante in tortor auctor sed sodales felis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et nisi dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ligula tellus. &lt;/p&gt;
+
+&lt;h3 id='this_is_my_lipsum'&gt;This is my lipsum&lt;/h3&gt;
+
+&lt;p&gt;Vestibulum congue mi quis nisi posuere suscipit. Pellentesque pretium rhoncus semper. Nunc a sapien a nisi faucibus suscipit. Maecenas nec orci mi, eget sollicitudin nulla. Sed id diam eu dolor cursus gravida. Sed ultricies lorem rhoncus est pharetra semper. Ut sit amet lectus nec orci scelerisque euismod.&lt;/p&gt;
+
+&lt;p&gt;Curabitur nisi tortor, semper sed fermentum sit amet, auctor id tellus. Fusce turpis lectus, malesuada et facilisis vitae, tincidunt nec metus. Vestibulum fermentum commodo dui luctus laoreet. Fusce ultricies mi sit amet diam ornare et hendrerit sapien vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ultrices dolor in arcu fringilla hendrerit. Nunc lacinia egestas mi, non eleifend justo pretium non. Vestibulum in mauris enim. Vivamus volutpat dapibus velit a tristique.&lt;/p&gt;</description>
+      <pubDate>Wed, 18 Apr 2012 20:00:00 -0400</pubDate>
+      <dc:date>2012-04-18T20:00:00-04:00</dc:date>
+    </item>
+  </channel>
+</rss>
