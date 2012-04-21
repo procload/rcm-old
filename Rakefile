@@ -2,8 +2,6 @@ public_dir      = "build"    # compiled site directory
 
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 
-server_port     = "4000"      # port for preview server eg. localhost:4000
-
 deploy_branch  = "gh-pages"
 
 desc "Build the website from source"
