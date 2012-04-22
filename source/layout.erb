@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Ryan Merrill</title>
+	<title>Ryan Clark Merrill</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
   
@@ -44,7 +44,7 @@
     <div class="container">
       <header class="l-header">
         <hgroup>
-          <h1><%= link_to 'Ryan Clark Merrill', 'index.html', :title => 'Ryan Clark Merrill' %></h1>
+          <h1><%= link_to 'Ryan Clark Merrill', '/', :title => 'Ryan Clark Merrill' %></h1>
           <h3>I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough. I work at <%= link_to 'Ample', 'http://helloample.com/', :target => '_blank' %>.</h3>
         </hgroup>
         <nav>
@@ -53,10 +53,10 @@
               <a href="/" title="Blog/Home" class="<%= 'current' if data.page.nav == 'blog' %>">Blog</a>
             </li>
             <li>
-              <a href="/about" title="Blog/Home" class="<%= 'current' if data.page.nav == 'about' %>">About</a>
+              <a href="/about" title="About" class="<%= 'current' if data.page.nav == 'about' %>">About</a>
             </li>
             <li>
-              <a href="/work" title="Blog/Home" class="<%= 'current' if data.page.nav == 'work' %>">Work</a>
+              <a href="/work" title="Work" class="<%= 'current' if data.page.nav == 'work' %>">Work</a>
             </li>
             
           </ul>
@@ -65,8 +65,14 @@
   		<!-- /site-header -->
       
       <div class="l-content" role="main">
-        <div class="l-page-body <%= data.page.type %>">
+        <% if is_blog_article? %>
+          <div class="l-page-body article">
+          <% content_for :blog_article, yield %>
+          <%= partial settings.blog_article_template %>
+        <% else %>
+          <div class="l-page-body <%= data.page.type %>">
           <%= yield %>
+        <% end %>
         </div>
         <!-- page-body -->
       </div>

@@ -21,7 +21,7 @@ activate :blog
 set :blog_summary_separator, /READMORE/
 
 #Set RSS layout
-page "/index.xml", :layout => 'rss'
+page "/index.xml", :layout => false
 
 # set :blog_summary_length, 500
 
