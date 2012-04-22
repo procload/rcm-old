@@ -1,9 +1,3 @@
-public_dir      = "build"    # compiled site directory
-
-deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
-
-deploy_branch  = "gh-pages"
-
 desc "Build the website from source"
 task :build do
   puts "## Building website"
@@ -11,27 +5,23 @@ task :build do
   puts status ? "OK" : "FAILED"
 end
 
-desc "deploy public directory to github pages"
-task :deploy do
-  puts "## Deploying branch to Github Pages "
-  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
-  Rake::Task[:copydot].invoke(public_dir, deploy_dir)
-  puts "\n## copying #{public_dir} to #{deploy_dir}"
-  cp_r "#{public_dir}/.", deploy_dir
-  cd "#{deploy_dir}" do
-    system "git checkout gh-pages"
+desc "deploy basic rack app to heroku"
+multitask :deploy do
+  puts "## Deploying to Github pages "
+  (Dir["_deploy/*"]).each { |f| rm_rf(f) }
+  system "cp -R build/* _deploy/"
+  puts "\n## copying build to _deploy"
+  cd "_deploy" do
     system "git add ."
     system "git add -u"
-    puts "\n## Commiting: Site updated at #{Time.now.utc}"
+    puts "\n## Committing: Site updated at #{Time.now.utc}"
     message = "Site updated at #{Time.now.utc}"
-    system "git commit -m \"#{message}\""
-    puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch} --force"
-    puts "\n## Github Pages deploy complete"
+    system "git commit -m '#{message}'"
+    puts "\n## Pushing generated website"
+    system "git push origin gh-pages"
+    puts "\n## Github deploy complete"
   end
 end
-
-
 
 desc "Build and deploy website"
   task :gen_deploy => [:build, :deploy] do
