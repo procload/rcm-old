@@ -151,9 +151,11 @@ $breakLarge: 1024px;
 	//Background and Border Configuration
 	@if $icon != 'none' {
     padding: .4em 1.25em .4em 2.4em;
+    @include background($icon, $color); // Older browsers
     @include background($icon, linear-gradient($color darken($color, 5%)));
   } @else {
     padding: .382em .939em;
+    @include background($color); // Older browsers
     @include background-image(linear-gradient($color darken($color, 15%)));
   }
 	@include border-radius($border-radius);
@@ -191,10 +193,12 @@ $breakLarge: 1024px;
 	  @if $icon != 'none' {
 	    border: 1px solid darken($color, 23%);
       padding: .4em 1.25em .4em 2.4em;
+      @include background($icon, darken($color, 5%)); // Older browsers
       @include background($icon, linear-gradient(darken($color, 5%) darken($color, 23%)));
     } @else {
       border: 1px solid darken($color, 23%);
       padding: .382em .939em;
+      @include background(darken($color, 5%));
       @include background-image(linear-gradient(darken($color, 5%) darken($color, 23%)));
     }
 	}
