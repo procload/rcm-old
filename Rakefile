@@ -11,6 +11,7 @@ multitask :deploy do
   (Dir["_deploy/*"]).each { |f| rm_rf(f) }
   system "cp -R build/* _deploy/"
   puts "\n## copying build to _deploy"
+  system "cp source/CNAME _deploy/CNAME"
   cd "_deploy" do
     system "git add ."
     system "git add -u"
