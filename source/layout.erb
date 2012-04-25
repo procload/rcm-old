@@ -31,8 +31,8 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" />
   
-  <%= javascript_include_tag "libs/modernizr-2.0.6.min.js" %>
-
+  <%= javascript_include_tag "libs/modernizr.js" %>
+  
   <%= stylesheet_link_tag "screen.css" %>
 	
   <script type="text/javascript" src="http://use.typekit.com/ekl6yta.js"></script>
@@ -90,13 +90,14 @@
     
 	  <!-- JavaScript at the bottom for fast page loading -->
 	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-
     <%= javascript_include_tag "http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js" %>
-    <%= javascript_include_tag "script.js" %>
+
+    <%= javascript_include_tag "script" %>
+    
     
 	  <!-- Asynchronous Google Analytics snippet. -->
 	  <script>
-	    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+	    var _gaq=[['_setAccount','UA-8516683-1'],['_trackPageview'],['_trackPageLoadTime']];
 	    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 	    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	    s.parentNode.insertBefore(g,s)}(document,'script'));
