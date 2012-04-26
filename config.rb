@@ -23,7 +23,7 @@ set :blog_summary_separator, /READMORE/
 #Set RSS layout
 page "/index.xml", :layout => false
 
-# set :blog_summary_length, 500
+set :blog_summary_length, 500
 
 # Build-specific configuration
 configure :build do
