@@ -121,15 +121,27 @@
   &.article {
     > article {
       @include respond-to(wide-screens) { @include pad(1,1); }
-    }
-  }
+      .l-article-body {
+        > ol {
+          li {
+            list-style-type: decimal;
+          }
+        } //ol
+        > ul {
+          li {
+            list-style-type: disc;
+          }
+        }
+      } //article-body
+    } //article
+  } //article layout
   
   &.about {
     
     > article {
       @include respond-to(wide-screens) { @include pad(1,1); }
       
-      .article-body {
+      .l-article-body {
         @include group;
       }
     }

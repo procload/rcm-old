@@ -17,7 +17,7 @@ m.items.do_sort = true # sort items by date
     i.author = 'Ryan Clark Merrill'
     i.title = article.title
     i.link = 'http://ryanmerrill.net' + article.url
-    i.description = article.body
+    i.description = article.body + '<p>You should follow me on <a href="http://twitter.com/procload" title="Twitter">Twitter</a>.</p>'
     i.date = article.date.strftime('%y-%m-%e %H:%M:%S %z')
   end
 end
