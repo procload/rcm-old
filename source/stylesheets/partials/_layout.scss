@@ -265,10 +265,18 @@
         border: 3px solid #333;
         margin-top: .679em;
         margin-bottom: 1.618em;
-        width: 111%;
-        max-width: 111%;
+        max-width: 100%;
+        display: block;
         &.offset-left {
+          width: 111%;
+          max-width: 111%;
           margin-left: -11.4%;
+        }
+        &.naked {
+          border: none;
+        }
+        &.centered {
+          margin: .679em auto 1.618em auto;
         }
       }
       
