@@ -267,6 +267,7 @@
         margin-bottom: 1.618em;
         max-width: 100%;
         display: block;
+
         &.offset-left {
           width: 111%;
           max-width: 111%;
@@ -278,7 +279,43 @@
         &.centered {
           margin: .679em auto 1.618em auto;
         }
-      }
+      } //img
+      
+      .image-row {
+        @include group;
+        margin: 1.618em 0;
+        img {
+          margin: .679em auto 1.618em auto;
+        } //img
+        
+        .left {
+          @include respond-to(medium-screens) {
+            float: left;
+            width: 30%;
+            margin-right: 2.618%;
+          } //medium-screens
+          
+          &:last-child {
+            @include respond-to(medium-screens) {
+              margin-right: 0;
+            } //medium-screens
+          } //last-child
+        } //left
+        
+        .right {
+          @include respond-to(medium-screens) {
+            float: right;
+            width: 30%;
+            margin-left: 2.618%;
+          } //medium-screens
+          
+          &:last-child {
+            @include respond-to(medium-screens) {
+              margin-left: 0;
+            } //medium-screens
+          } //last-child
+        } //right
+      } //image-row
       
     } //article-body
     
