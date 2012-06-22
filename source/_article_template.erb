@@ -10,6 +10,7 @@
   <!-- /article-body -->
   
   <footer>
-    <time class="published updated" pubdate="" datetime="2011-05-06">May 6th, 2011</time>
+    <time class="published updated" pubdate="" datetime="<%= current_article_date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= current_article_date.strftime('%A, %b %d') %></time>
+    
   </footer>
 </article>
