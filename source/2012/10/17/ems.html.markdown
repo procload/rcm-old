@@ -1,5 +1,5 @@
 --- 
-title: Rems, Ems, Pixels
+title: Sizing Text in Pixels, Ems or Rems &mdash; What's Correct?
 date: 2012/10/16 10:10
 tags: Design, Typography, Front-end, CSS, SCSS
 nav: blog
