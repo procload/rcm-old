@@ -44,7 +44,7 @@ So what we're left with is using ems is the responsible way to set type on the w
 The rem does away with having to set type size relative to its parent element by adjusting the text size relative to the root element of the page, often the HTML tag. [Jonathan Snook does a good job explaining this](http://snook.ca/archives/html_and_css/font-size-with-rem):
 > The rem unit is relative to the root—or the html—element. That means that we can define a single font size on the html element and define all rem units to be a percentage of that.
 
-Unfortunately we're stuck with awful browser support. An option Snook proposes is to create two sets of type sizes, one in rems and the other in pixels to support older browsers. This of course doesn't solve the problem of page zooming vs. text resizing, but we have to draw the line somewhere don't we? 
+Unfortunately we're stuck with lack of support for IE7 and IE8, both of which we begrudgingly support. An option Snook proposes is to create two sets of type sizes, one in rems and the other in pixels to support older browsers. This of course doesn't solve the problem of page zooming vs. text resizing, but we have to draw the line somewhere don't we? 
 
 Well, maybe. 
 
