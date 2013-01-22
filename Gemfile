@@ -4,5 +4,5 @@ gem "middleman"
 gem 'middleman-smusher'
 gem 'middleman-blog'
 
-gem 'compass-susy-plugin' # Susy
+gem 'susy' # Susy
 gem "sass"

@@ -3,7 +3,7 @@ type: 'articles'
 nav: 'blog'
 ---
 
-<% data.blog.articles.each do |article| %>
+<% blog.articles.each do |article| %>
   <article>
     <header>
       <h1><a href="<%= article.url %>"><%= article.title %></a></h1>

@@ -3,10 +3,10 @@ type: 'articles'
 nav: 'blog'
 ---
 
-<% data.blog.articles[0...5].each do |article| %>
+<% blog.articles[0...5].each do |article| %>
   <article>
     <header>
-      <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+      <h1><%= link_to article.title, article %></h1>
     </header>
     <div class="l-article-body">
       <%= article.summary %>

@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Ryan Clark Merrill</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- Meta Data -->
+  <meta name="author" content="Ryan Clark Merrill">
+  <meta name="Description" content="I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough.">
+  <meta name="google-site-verification" content="QjVRDPMPKFZY1BGtQnwqrQ3J-wFck8wJUaq8MoqzilA" />
+  <meta name="Copyright" content="Ryan Clark Merrill <%= copyright_years(2011) %>. All Rights Reserved.">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Opengraph Data -->
+  <meta property="og:title" content="Ryan Clark Merrill"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:url" content="http://www.ryanmerrill.net/"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:site_name" content="Ryan Clark Merrill"/>
+  <meta property="og:description" content="I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough."/>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <%= stylesheet_link_tag "screen.css" %>
+  <%= javascript_include_tag "libs/modernizr.js" %>
+  
+  
+	
+  <!-- Feedburner -->
+  <link rel="alternate"  href="http://feeds.feedburner.com/ryanclarkmerrill" type="application/rss+xml" title="Ryan Clark Merrill's FeedBurner RSS Feed"/>
+  
+  <script type="text/javascript">
+    (function() {
+      var config = {
+        kitId: 'ekl6yta',
+        scriptTimeout: 3000
+      };
+      var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+  </script>
+  
+</head>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <header class="l-header">
+        <hgroup>
+          <h1><%= link_to 'Ryan Clark Merrill', '/', :title => 'Ryan Clark Merrill' %></h1>
+          <h3>I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough. I work at <%= link_to 'Ample', 'http://helloample.com/', :target => '_blank' %>.</h3>
+        </hgroup>
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="/" title="Blog/Home" class="<%= 'current' if data.page.nav == 'blog' %>">Blog</a>
+            </li>
+            <li>
+              <a href="/about" title="About" title="About" class="<%= 'current' if data.page.nav == 'about' %>">About</a>
+            </li>
+            
+            
+          </ul>
+        </nav>
+  	  </header>
+  		<!-- /site-header -->
+      
+      <div class="l-content" role="main">
+        <div class="l-page-body <%= data.page.type %>">
+          <%= yield %>
+        </div>
+        <!-- page-body -->
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /container -->
+    
+    
+    <footer class="l-footer">
+      <div>
+        &copy; Copyright RCM <%= copyright_years(2011) %>
+      </div>
+    </footer>
+    <!-- /footer -->
+    
+	  <!-- JavaScript at the bottom for fast page loading -->
+    <%= javascript_include_tag "script" %>
+    
+	  <!-- Asynchronous Google Analytics snippet. -->
+	  <script>
+	    var _gaq=[['_setAccount','UA-8516683-1'],['_trackPageview'],['_trackPageLoadTime']];
+	    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	    s.parentNode.insertBefore(g,s)}(document,'script'));
+	  </script>
+
+	  <!-- Prompt IE 6 users to install Chrome Frame.
+	       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	  <!--[if lt IE 7 ]>
+	    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	  <![endif]-->
+
+  </body>
+</html>
