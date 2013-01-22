@@ -120,7 +120,7 @@
   
   &.article {
     > article {
-      @include respond-to(wide-screens) { @include pad(1,1); }
+      @include respond-to(wide-screens) { @include pad(2,2); }
       .l-article-body {
         > ol {
           li {
