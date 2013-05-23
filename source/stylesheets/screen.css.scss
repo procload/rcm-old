@@ -70,6 +70,7 @@ h1 {
   font-weight: 400;
 }
 
+
 h3 {
   font-family: $base-font-family;
   font-size: calc-em(21px);
@@ -177,6 +178,12 @@ a {
     line-height: 1.618em;
     font-size: calc-em(24px);
     margin: 0 0 calc-em(42px, 24px);
+
+
+    .index & {
+      margin-bottom: calc-em(12px);
+    }
+
     @include at-breakpoint(32em 12) {
       font-size: calc-em(32px);
     }
