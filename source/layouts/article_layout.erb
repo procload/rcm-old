@@ -1,5 +1,18 @@
-<%= yield %>
+<% wrap_layout :layout do %>
+  <article class="blog-article">
+    <header class="article-header section-header">
+      <h1><%= current_article.title %></h1>
+      <hr />
+    </header>
 
-<%= current_article.title %>
+    <div class="article-body section-body">
+      <%= current_article.body %>
+      <p class="twitter-link">You should follow me on <%= link_to 'Twitter', 'http://twitter.com/procload/', :target => '_blank' %>.</p>
+    </div>
+    <!-- /article-body -->
 
-<%= current_article.body %>
+    <footer class="article-footer section-footer">
+      <time class="published updated" pubdate="" datetime="<%= current_article.date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= current_article.date.strftime('%A, %b %d') %></time>
+    </footer>
+  </article>
+<% end %>

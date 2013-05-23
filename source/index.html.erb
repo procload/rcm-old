@@ -3,19 +3,18 @@ type: 'articles'
 nav: 'blog'
 ---
 
-<% blog.articles[0...5].each do |article| %>
-  <article>
-    <header>
-      <h1><%= link_to article.title, article %></h1>
-    </header>
-    <div class="l-article-body">
-      <%= article.summary %>
-      <%= link_to 'Continue Reading', article.url %>
-    </div>
-    <!-- /article-body -->
-    <footer>
-      <time class="published updated" pubdate="" datetime="<%= article.date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= article.date.strftime('%A, %b %d') %></time>
-    </footer>
-  </article>
+<% content_for :intro do %>
+
+<%= image_tag "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==", alt: "Ryan Clark Merrill", class: 'mugshot' %>
+
+<h2>I am a hungry designer living in Cincinnati, Ohio. <br />I like my friends old, music loud and work tough.</h2>
+<i class="icon-bolt"></i>
 <% end %>
-<%= partial 'partials/pagination' %>
+
+<% content_for :bio do %>
+<section class="bio">
+  <p>I'm interested in exploring the intersection of digital design and publishing.</p>
+  <p>My designs tend to eschew superfluous ornaments and decorations in favor of considered typography and clean lines. The best designs are often invisible and allow the user to efficiently accomplish the task at hand.</p>
+  <p>Design starts with strong content. As a former journalist and editor, I understand the importance of readability and accessibility and will strive for the benefit of the audience. <%= link_to 'Get in touch', '#' %>.</p>
+</section>
+<% end %>

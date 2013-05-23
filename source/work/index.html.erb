@@ -2,36 +2,70 @@
 type: 'article'
 nav: 'work'
 ---
+<header class="section-header">
+  <h1>Work</h1>
+  <hr />
+  <h2>I am a designer and developer hybrid that's not supposed to exist. I believe many of the best design decisions come when building the site. You can view more of my <%= link_to 'designs on Dribbble', 'http://dribbble.com/procload'%>, <br />or view my code on <%= link_to 'Github', 'http://github.com/procload' %>.</h2>
+</header>
+<!-- /about-header -->
+<section class="section-body">
 
 <ul class="portfolio-list">
-  <li class="portfolio-item system7">
-    <%= link_to image_tag('work/img-s7-logo.jpg', :alt => 'System7'), '/work/system7.html', :title => 'System7' %>
-    <h2><a href="/work/system7.html" title="System7">System7</a></h2>
-    <h3>Logo</h3>
-  </li>
   
-  <li class="portfolio-item lower9">
-    <%= link_to image_tag('work/img-lower9-thumb.jpg', :alt => 'The Lower 9'), '/work/lower9.html', :title => 'The Lower 9' %>
-    <h2><a href="/work/lower9.html" title="The Lower 9">The Lower 9</a></h2>
-    <h3>Logo &amp; Website</h3>
+  <li class="portfolio-item ebth">
+  <div class="port-image">
+    <%= link_to image_tag('work/img-ebth@2x.png', :alt => 'Everything but the House'), '/work/ebth.html', :title => 'Everything but the House' %>
+  </div>
+    <div class="about-item">
+      <h1><%= link_to 'Everything but the House', '/work/ebth.html' %></h1>
+      <h2>Everything but the House is an online bidding website that specializes in estate sales. I did UI design work, built the front-end and helped implement the content into a Ruby on Rails app.</h2>
+    </div>
+  </li>
+
+  <li class="portfolio-item qcm">
+  <div class="port-image">
+
+    <%= link_to image_tag('work/img-qcm.png', :alt => 'qcm'), '/work/qcm.html', :title => 'Queen City Merge' %>
+  </div>
+    <div class="about-item">
+      <h1><%= link_to 'Queen City Merge', '/work/qcm.html' %></h1>
+      <h2>Queen City Merge is an annual two-day conference held in Cincinnati, Ohio designed to bring together desigers developers so they can learn frome one another. I helped organize the event and designed and built the responsive website.</h2>
+    </div>
+  </li>
+
+  <li class="portfolio-item yocal">
+  <div class="port-image">
+
+    <%= link_to image_tag('work/img-yocal@2x.png', :alt => 'yocal'), '/work/yocal.html', :title => 'Yocal' %>
+  </div>
+    <div class="about-item">
+      <h1><%= link_to 'Yocal', '/work/yocal.html' %></h1>
+      <h2>Yocal is a local news aggregator that helps employers retain and attract new employees. I designed and developed the front-end of the site and implemented it into a custom Rails app. I also worked on implementing a custom admin for Yocal staff that makes it easy for employers to track community enagement among their employees.</h2>
+    </div>
+  </li>
+
+  <li class="portfolio-item brandery">
+  <div class="port-image">
+
+    <%= link_to image_tag('work/img-brandery@2x.png', :alt => 'brandery'), '/work/brandery.html', :title => 'The Brandery' %>
+  </div>
+    <div class="about-item">
+      <h1><%= link_to 'The Brandery', '/work/brandery.html' %></h1>
+      <h2>The Brandery is a startup accelerator based in Cincinnati. I worked from a static design file to turn the design into a responsive site by appropriating many of the styles and starting small-screen first development workflow.</h2>
+    </div>
   </li>
 
   <li class="portfolio-item chub">
+  <div class="port-image">
     <%= link_to image_tag('work/img-logo-chub.jpg', :alt => 'CoachHub'), '/work/chub.html', :title => 'CoachHub' %>
-    <h2><a href="/work/chub.html" title="CoachHub">CoachHub</a></h2>
-    <h3>Website &amp; Development</h3>
+  </div>
+    <div class="about-item">
+      <h1><%= link_to 'Coach Hub', '/work/chub.html' %></h1>
+      <h2>CoachHub is a <%= link_to 'youth sports team-management website', 'http://coachhub.com/', :target => '_blank', :title => 'CoachHub' %> built on Rails to help parents manage carpools, line-ups, photos and other team-related information. I designed and developed the public and administrator user interface for the website. </h2>
+    </div>
   </li>
   
-  <li class="portfolio-item wedding">
-    <%= link_to image_tag('work/img-thumb-wedding.png', :alt => 'My Wedding'), '/work/wedding.html', :title => 'My Wedding' %>
-    <h2><a href="/work/wedding.html" title="My Wedding">My Wedding</a></h2>
-    <h3>Print Design &amp; Website</h3>
-  </li>
-  
-  <li class="portfolio-item penn-oaks">
-    <%= link_to image_tag('work/img-thumb-pennOaks.jpg', :alt => 'Penn Oaks Country Club'), '/work/penn-oaks.html', :title => 'Penn Oaks Country Club' %>
-    <h2><a href="/work/penn-oaks.html" title="Penn Oaks Country Club">Penn Oaks Country Club</a></h2>
-    <h3>Website</h3>
-  </li>
+
 </ul>
 <!-- /portfolio-list -->
+</section>

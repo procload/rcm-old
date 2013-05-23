@@ -12,12 +12,12 @@ html {
 
 body {
   width: 100%;
-  font-family: $baseFontFamily;
-  color: $textColor;
+  font-family: $base-font-family;
+  color: $text-color;
   background: #FAFAFA;
   border-top: .679em solid #000;
-  font-size: 120%;
-  line-height: $baseLineHeight;
+  font-size: 100%;
+  line-height: $base-line-height;
 }
 
 // Typography Styles
@@ -30,18 +30,8 @@ body {
                      "fonts/font-awesome/fontawesome-webfont.eot");
 
 
-// Prevent FOUT
-.wf-loading {
-   h1, h2, h3,
-   h4, h5, h6,
-   p,
-   a,
-   time,
-   .nav-list li a {
-     display: none;
-   }
-} //wf-loading
- 
+
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: $headlineFontFamily;

@@ -1,5 +1,37 @@
 $(document).ready(function() {
   prettyPrint();
-  
-  $(".l-header hgroup h1").fitText(1.2, { minFontSize: '38px', maxFontSize: '46px' })
+
+  var stickyPanelOptions;
+  stickyPanelOptions = {
+    afterDetachCSSClass: "fixed-top",
+    savePanelSpace: true,
+  };
+
+
+
+  // call jRespond and add breakpoints
+  var jRes = jRespond([
+    {
+      label: 'small',
+      enter: 0,
+      exit: 545
+    },
+    {
+      label: 'big',
+      enter: 545,
+      exit: 99999
+    }
+  ]);
+
+  // register enter and exit functions for a single breakpoint
+  jRes.addFunc({
+    breakpoint: 'big',
+    enter: function() {
+      $(".site-nav").stickyPanel(stickyPanelOptions);
+    },
+    exit: function() {
+      $(".site-nav").stickyPanel("unstick");
+    }
+  });
+
 });

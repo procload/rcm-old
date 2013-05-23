@@ -1,0 +1,9 @@
+<section class="footer-posts">
+  <h3>Recent Writings</h3>
+  <ul>
+    <% blog.articles[0...3].each do |article| %>
+      <%= content_tag :li, link_to(article.title, article) %>
+    <% end %>
+  </ul>
+</section>
+<!-- /footer-blog -->

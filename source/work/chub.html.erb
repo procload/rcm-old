@@ -5,15 +5,16 @@ nav: 'work'
 
 
 <article class="workpiece">
-  <header>
-    <h1>CoachHub</h1>
-    <h2>I designed and developed the user interface for many sections of the <%= link_to 'CoachHub website', 'http://coachhub.com/', :target => '_blank', :title => 'CoachHub' %>.</h2>
+  <header class="section-header">
+    <h1><%= link_to 'CoachHub', 'http://coachhub.com/', :target => '_blank', :title => 'CoachHub' %></h1>
+    <hr />
+    <h2>CoachHub is a <%= link_to 'youth sports team-management website', 'http://coachhub.com/', :target => '_blank', :title => 'CoachHub' %> built on Rails to help parents manage carpools, line-ups, photos and other team-related information. I designed and developed the public and administrator user interface for the website. </h2>
   </header>
-  <div class="article-body">
+  <div class="work-body section-body">
+    
+    <%= image_tag 'work/chub/img-chub-comp.png', :class => 'computer', :alt => 'CoachHub' %>
 
     <%= image_tag 'work/chub/img-homepage.png', :alt => 'CoachHub' %>
-
-    <%= image_tag 'work/chub/img-computer.png', :class => 'computer', :alt => 'CoachHub' %>
   
     <h3>User Homepage</h3>
     <%= image_tag 'work/chub/img-parentHome.png', :alt => 'CoachHub &mdash; Parent Home' %>

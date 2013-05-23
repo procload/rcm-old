@@ -3,19 +3,21 @@ type: 'articles'
 nav: 'blog'
 ---
 
+<section class="section-body">
 <% blog.articles.each do |article| %>
-  <article>
+  <article class="blog-article">
     <header>
       <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
     </header>
     <div class="l-article-body">
       <%= article.summary %>
-      <%= link_to 'Continue Reading', article.url  %>
     </div>
     <!-- /article-body -->
-    <footer>
+    <footer class="summary-footer">
+      <%= link_to 'Continue Reading', article.url  %>
       <time class="published updated" pubdate="" datetime="<%= article.date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= article.date.strftime('%A, %b %d') %></time>
     </footer>
   </article>
 <% end %>
 <%= partial 'partials/pagination' %>
+</section>

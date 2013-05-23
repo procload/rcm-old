@@ -16,21 +16,14 @@ Important Number: 32px (1.778em) @ 1:1.618
 
 // GLOBAL VALUES
 // --------------------------------------------------
-// Links
-$linkColor:                        #08c;
-$linkHoverColor:                   darken($linkColor, 5%);
 
-//Typography
-$baseFontFamily:                   "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, Times, "Times New Roman", serif;
-$textColor:                        #333;
-$baseFontSize:                    18px;
-$baseLineHeight:                  1.618;
+//Colors
+$background-color:                 #FAFAFA;
+$white:                            #FAFAFA;
+$gray-dark:                        #333;
+$gray:                             #CCC;
 
-$headlineFontFamily:               "ff-tisa-sans-web-pro-1", "ff-tisa-sans-web-pro-2", "Helvetica Neue", helvetica, arial, sans-serif;;
-
-$monospace-font-family:            Menlo, Monaco, "Courier New", monospace;
-//Borders
-$borderColor:                      #EFEFEF;
+$blue:                             #0088CC;
 
 //Social media colors
 $twitterColor:                     #33CCFF;
@@ -41,6 +34,24 @@ $flickrColor:                      #0063DC;
 $rdioColor:                        #007DC3;
 $linkedinColor:                    #0181B2;
 $facebookColor:                    #3C5A94;
+
+// Links
+$linkColor:                        #08c;
+$linkHoverColor:                   darken($linkColor, 5%);
+
+//Typography
+$base-font-family:                "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia, Times, "Times New Roman", serif;
+$text-color:                       $gray-dark;
+$baseFontSize:                    17px;
+$baseLineHeight:                  1.618;
+
+$headline-font-family:             "ff-meta-web-pro-1", "ff-meta-web-pro-2", "Helvetica Neue", helvetica, arial, sans-serif;
+$alt-font-family:                  "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2", helvetica, arial, sans-serif;
+$monospace-font-family:            Menlo, Monaco, "Courier New", monospace;
+//Borders
+$borderColor:                      #EFEFEF;
+
+
 
 // GRID
 // --------------------------------------------------
@@ -60,14 +71,10 @@ $side-gutter-width: 1em; // Loosely taken from modular scale
 // Compass files to load
 @import "susy";
 @import "compass/css3";
-@import "compass/typography/links";
 
 // My Mixins
 @import "partials/custom_mixins";
 
-
-@import "partials/global";
 @import "partials/code";
-@import "partials/layout";
 @import "partials/prettify";
 @import "partials/font_awesome";

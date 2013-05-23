@@ -4,66 +4,48 @@ nav: 'about'
 ---
 
 <article class="about-me">
-  <header>
-    <h1>On the Subject of Me</h1>
+  <header class="section-header about-header">
+    <h1>About Me</h1>
+    <hr />
+    <h2>I have been <%= link_to 'designing', 'http://dribbble.com/procload/' %> in various mediums for more than six years, and I've also been known to throw around a <%= link_to 'line of code or two', 'http://github.com/procload' %>.</h2>
   </header>
-  <div class="article-body">
-    <div class="about-text">
-      
-      <p class="intro">I have been designing in various mediums for more than six years, and I've also been known to throw around a line of code or two.</p>
-      <p>
-                  I graduated from <a href="http://www.osu.edu/" title="The Ohio State University">The Ohio State University</a> with degrees in Journalism and English. I was the Editor-in-chief of the Ohio State student-run daily newspaper, <a href="http://www.thelantern.com/" title="The Lantern">The Lantern</a>.
-                </p>
-                <p>
-                  I built this site using HTML5 and CSS3 wherever possible and while adhering to strict <a href="http://www.webstandards.org/" title="The Web Standards Project">Web standards</a> and progressive enhancement.
-                </p>
-                <p>
-                  I wholeheartedly <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/" title="Not looking the same">do not believe that Web sites should look the same in every browser</a>. Nor do I think the layout needs to <a href="http://www.alistapart.com/articles/responsive-web-design/" title="Responsive Web Design">look the same in every resolution</a>.
-                </p>
-                <p>
-                  If you stick around long enough you're bound to see many changes to the look and design of this site. I consider it my personal sandbox where I can modify and change things as I please without having to compromise for older browsers.
-                </p>
-                <p>
-                  Check out my <a href="/work" title="Portfolio">portfolio</a> to see what I've done and what I'm working on.</p>
-                
-    </div>
-    <div class="personal-details">
-      <%= image_tag 'parts/img-me.png', :alt => "Ryan Clar Merrill" %>
-      <div class="write-me">
-        <h3>Write me</h3>
-        <p>Write me at <%= link_to 'ryan@ryanmerrill.net', 'mailto:ryan@ryanmerrill.net', :title => 'ryan@ryanmerrill.net' %>.
-      </div>
-      <h3>Find me at</h3>
-      <ul class="social-media">
-        <li class="twitter">
-          <i class='icon-twitter-sign'></i><%= link_to 'Twitter', 'http://www.twitter.com/procload', :target => '_blank' %>
-        </li>
-        <li class="dribbble">
-          <i class='icon-tint'></i><%= link_to 'Dribbble', 'http://www.dribbble.com/procload', :target => '_blank' %>
-        </li>
-        <li class="github">
-          <i class='icon-github-sign'></i><%= link_to 'Github', 'http://www.github.com/procload', :target => '_blank' %>
-        </li>
-        <li class="flickr">
-          <i class='icon-camera-retro'></i><%= link_to 'Flickr', 'http://www.flickr.com/procload', :target => '_blank' %>
-        </li>
-        
-        <li class="rdio">
-          <i class='icon-headphones'></i><%= link_to 'Rdio', 'http://www.rdio.com/procload', :target => '_blank' %>
-        </li>
-      
-        <li class="linkedin">
-          <i class='icon-linkedin-sign'></i><%= link_to 'LinkedIn', 'http://www.linkedin.com/procload', :target => '_blank' %>
-        </li>
-        
-        <li class="facebook">
-          <i class='icon-facebook-sign'></i><%= link_to 'Facebook', 'http://www.facebook.com/procload', :target => '_blank' %>
-        </li>
-        
+  <!-- /about-header -->
+  <section class="section-body about-body">
+    <p>
+      I'm a hungry designer, developer and writer who likes his work tough and code clean. It comes from a midwestern work ethic forged near the abandoned steel yards of the Great Lakes. I grew up on a steady diet of underdog sports teams, brutal winters and minimalist writers &mdash; distilling in me a utilitarian approach to design and a desire to celebrate victories of any size.
+    </p>
+    <p>Check out my <a href="/work" title="Portfolio">portfolio</a> to see some of my work.</p>
+    <hr />
+    <div class="about-list">
+      <h3>I believe:</h3>
+      <ul>
+        <li>Websites do not need to look the same in every browser</li>
+        <li>Eliminating distractions in life and design</li>
+        <li>Quality over quantity</li>
+        <li>Good design starts with good content</li>
       </ul>
     </div>
-  
-  </div>
-  
+    <div class="about-list">
+      <h3>I'm interested in:</h3>
+      <ul>
+        <li>The intersection of publishing and technology</li>
+        <li>Making the world a better place than I found it</li>
+        <li>Making interesting things</li>
+        <li>Cutting words</li>
+      </ul>
+    </div>
+
+    <hr />
+    <p>Write me at <%= link_to 'ryan@ryanmerrill.net', 'mailto:ryan@ryanmerrill.net', :title => 'ryan@ryanmerrill.net' %>.
+    <p>Find me at:
+    <%= link_to 'Twitter', 'http://www.twitter.com/procload', :target => '_blank', :class => 'twitter' %>,
+    <%= link_to 'Dribbble', 'http://www.dribbble.com/procload', :target => '_blank', :class => 'dribbble' %>,
+    <%= link_to 'Github', 'http://www.github.com/procload', :target => '_blank', :class => 'github' %>,
+    <%= link_to 'Flickr', 'http://www.flickr.com/procload', :target => '_blank', :class => 'flickr' %>,
+    <%= link_to 'Rdio', 'http://www.rdio.com/procload', :target => '_blank', :class => 'rdio' %> and
+    <%= link_to 'LinkedIn', 'http://www.linkedin.com/procload', :target => '_blank', :class => 'linkedin' %>.
+    </p>
+  </section>
+  <!-- /about-body -->
 </article>
-<!-- /workpiece -->
+<!-- /about-me -->
