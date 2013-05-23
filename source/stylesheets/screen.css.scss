@@ -179,13 +179,11 @@ a {
     font-size: calc-em(24px);
     margin: 0 0 calc-em(42px, 24px);
 
-
-    .index & {
-      margin-bottom: calc-em(12px);
-    }
-
     @include at-breakpoint(32em 12) {
       font-size: calc-em(32px);
+      .index & {
+        margin-bottom: calc-em(12px);
+      }
     }
   } //h2
 
