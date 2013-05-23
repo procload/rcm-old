@@ -18,16 +18,25 @@
         border: none;
       }
       .port-image {
-        @include span-columns(2,6.5);
+        @include respond-to(48em) {
+        
+          @include span-columns(2,6.5);
+        }
         text-align: center;
         img {
-          margin: 0 auto;
+          margin: 0 auto calc-em(16px);
           border: none;
+          width: auto;
           @include box-shadow(none);
+          @include respond-to(48em) {
+            margin: 0 auto;
+          }
         }
       }
       .about-item  {
-        @include span-columns(4 omega,6.5);
+        @include respond-to(48em) {
+          @include span-columns(4 omega,6.5);
+        }
       }
       h1 {
         font-size: calc-em(24px);
