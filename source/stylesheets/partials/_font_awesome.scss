@@ -21,10 +21,9 @@
  *  Work: Lead Product Designer @ http://kyruus.com
  */
 
-$fontAwesomePath: "/fonts/font-awesome/fontawesome-webfont" !default;
+$fontAwesomePath: "/fonts/font-awesome" !default;
 $borderColor:       #eee;
 $iconMuted:         #eee;
-@mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius; }
 
 
 @font-face {
