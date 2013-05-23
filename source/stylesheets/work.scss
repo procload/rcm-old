@@ -18,8 +18,7 @@
         border: none;
       }
       .port-image {
-        @include respond-to(48em) {
-        
+        @include at-breakpoint(48em 12) {
           @include span-columns(2,6.5);
         }
         text-align: center;
@@ -34,7 +33,7 @@
         }
       }
       .about-item  {
-        @include respond-to(48em) {
+        @include at-breakpoint(48em 12) {
           @include span-columns(4 omega,6.5);
         }
       }
@@ -43,7 +42,6 @@
       }
       h2 {
         font-size: calc-em(18px);
-        font-style: italic;
         font-weight: 400;
         line-height: calc-em(27px, 18px);
         font-family: $base-font-family;
