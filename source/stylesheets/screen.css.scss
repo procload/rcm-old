@@ -2,6 +2,8 @@
 @import 'about';
 @import 'work';
 @import 'writing';
+@import 'resume';
+@import 'shame';
 
 // Global Layout Styles
 // --------------------------------------------------
@@ -111,16 +113,18 @@ blockquote {
 
 
 ul {
-  margin: 0 0 calc-em(18px);
+  margin: 0 0 calc-em(18px) calc-em(18px);
+  @include at-breakpoint(36em 12) {
+    margin-left: 0;
+  }    
+  
   li {
     list-style-type: disc;
     font-size: calc-em(18px);
     line-height: calc-em(27px, 18px);
     font-style: italic;
     list-style-position: inside;
-    @include at-breakpoint(34em 12) {
-      list-style-position: outside;
-    }    
+    list-style-position: outside;
   }
 }
 
@@ -213,7 +217,9 @@ a {
     -moz-mask-position-x: 0px;
     -moz-mask-position-y: 50%;
 
+
   } //mugshot
+
 
   > hr {
     margin: 0 0 calc-em(48px);

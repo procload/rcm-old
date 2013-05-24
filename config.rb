@@ -17,7 +17,11 @@ helpers do
   end
 end
 
-#Set RSS layout
+
+# Set resume layout
+page "/resume/index.html", layout: 'resume'
+
+# Set RSS layout
 page "/index.xml", :layout => false
 
 activate :blog do |blog|
