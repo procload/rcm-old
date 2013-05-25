@@ -31,7 +31,7 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 <%= stylesheet_link_tag "screen.css" %>
-<link rel='stylesheet' id=''  href='stylesheets/print.css' type='text/css' media='print' />
+<link rel='stylesheet' href='stylesheets/print.css' type='text/css' media='print' />
 <%= javascript_include_tag "libs/modernizr.js" %>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <%= javascript_include_tag "libs/jquery.stickyPanel.js" %>
@@ -66,7 +66,7 @@
       <a href="/archive" title="Writing" class="<%= 'current' if data.page.nav == 'blog' %>">Writing</a>
       </li>
       <li>
-      <a href="/about" title="About" title="About" class="<%= 'current' if data.page.nav == 'about' %>">About</a>
+      <a href="/about" title="About" class="<%= 'current' if data.page.nav == 'about' %>">About</a>
       </li>
     </ul>
   </nav>
