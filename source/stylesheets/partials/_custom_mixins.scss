@@ -36,73 +36,6 @@ $breakLarge: 1024px;
   }
 }
 
-// ------------------------------------------- //
-//    GRID BACKGROUND     										 //
-// ------------------------------------------- //
-
-@function build-grid(   $total-columns: 19,
-                        $page-width:    930px,
-                        $column-width-percent: 30px,
-                        $gutter-width-percent: 20px,
-                        $column-color: rgba(255,0,255,.05)) {
-
-  //Always transparent white for gutters
-  $transparent-color: rgba(255,255,255,0);
-
-  //Linear Gradient
-  $lg:  $column-color 0,
-        $column-color $column-width-percent,
-
-        //Gutter
-        $transparent-color $column-width-percent,
-        $transparent-color $column-width-percent + $gutter-width-percent,
-
-        //Column
-        $column-color $column-width-percent + $gutter-width-percent,
-        $column-color ($column-width-percent * 2) + $gutter-width-percent;
-
-  @for $i from 2 through $total-columns  {
-
-    $j: $i;
-
-    //Gutter
-    $gutter-start: $transparent-color ($column-width-percent * $j) + ($gutter-width-percent * ($j - 1));
-    $gutter-end: $transparent-color (($column-width-percent * $j) + ($gutter-width-percent * $j));
-
-    $lg: join($lg, ($gutter-start, $gutter-end));
-
-    //Column
-    $column-start: $column-color ($column-width-percent * $j) + ($gutter-width-percent * $j);
-    $column-end:  $column-color ($column-width-percent * ($j + 1)) + ($gutter-width-percent * $j);
-    $lg: join($lg, ($column-start, $column-end));
-  }
-  @return $lg;
-}
-
-@mixin grid-background($total-columns: $gridColumns,
-                       $grid-column-width: $gridColumnWidth,
-                       $grid-gutter-width: $gridGutterWidth,
-                       //$offset: $grid-background-offset,
-                       $column-color: rgba(255,0,255,.05)) {
-
-  //Calculates the page width
-  $page-width: ($grid-column-width * $total-columns) + ($grid-gutter-width * ($total-columns - 1));
-
-  //Calculating column and gutter widths as a percent to use them in linear-gradients
-  $column-width-percent: percentage(($grid-column-width / $page-width));
-  $gutter-width-percent: percentage(($grid-gutter-width / $page-width));
-
-  $linear-gradient: build-grid($total-columns, $page-width, $column-width-percent, $gutter-width-percent, $column-color);
-
-  //Support for all b
-  background-image:  -webkit-linear-gradient(left, $linear-gradient); // Safari 5.1+, Chrome
-  background-image:     -moz-linear-gradient(left, $linear-gradient);
-  background-image:      -ms-linear-gradient(left, $linear-gradient);
-  background-image:       -o-linear-gradient(left, $linear-gradient);
-  background-image: unquote("linear-gradient(left, #{$linear-gradient})");
-
-} //grid-background
-
 
 
 @mixin create-button($color, $font-color: none, $border-radius: 4px, $icon: none) {
@@ -197,6 +130,37 @@ $breakLarge: 1024px;
   }
 }
 
+// MEDIA QUERIES
+// --------------------------------------------------
+// Assumes you want IE 8 and below to use largest screen size
+@mixin respond-to($viewport-width, $ie-version: 'lt-ie9') {
+  @media only screen and (min-width: $viewport-width) {
+    @content;
+  }
+  @if $ie-version == 'lt-ie9' { 
+    html.lt-ie9 & { // Using Paul Irish's conditional comments
+      @content;
+    }
+  }
+  @else if $ie-version == 'lt-ie8' {
+    html.lt-ie8 & { // Using Paul Irish's conditional comments
+      @content;
+    }
+  }
+}
+
+// Retina Image
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
 
 
 // ------------------------------------------- //
@@ -267,6 +231,28 @@ $breakLarge: 1024px;
 // ------------------------------------------- //
 //    IE-FIXES        												 //
 // ------------------------------------------- //
+
+// IE HACKS
+// --------------------------------------------------
+@mixin ie7 {
+  * + html & { // Using browser hacks
+    @content;
+  }
+}
+
+@mixin ie8 {
+  html.ie8 & { // Using Paul Irish's conditional comments
+    @content;
+  }
+}
+
+@mixin ie9 {
+  html.ie9 & { // Using Paul Irish's conditional comments
+    @content;
+  }
+}
+
+
 @mixin ie-buttonify($width, $height, $image-location) {
 	display: block;
 	border: none;
@@ -275,3 +261,5 @@ $breakLarge: 1024px;
 	text-indent: -9999px;
 	@include background(image-url($image-location) no-repeat top left);
 }
+
+
