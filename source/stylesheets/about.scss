@@ -12,6 +12,11 @@
       @include span-columns(3, 6.5);
       @include nth-omega(2n);
     }    
+    &.interested {
+      @include ie8 {
+        @include omega;
+      }
+    }
   }
   .twitter {
     color: #3cf;
