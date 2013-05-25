@@ -6,10 +6,10 @@ body.resume {
   .resume-header,
   .resume-body,
   .resume-footer {
-    @include at-breakpoint(36em 12) {
+    @include respond-to(36em) {
       @include squish(1,1);
     }
-    @include at-breakpoint(69em 12) {
+    @include respond-to(69em) {
       @include squish(2,2);
     }
   }

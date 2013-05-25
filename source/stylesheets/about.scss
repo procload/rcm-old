@@ -8,7 +8,7 @@
   }
   .about-list {
     margin-bottom: calc-em(16px);
-    @include at-breakpoint(48em 12) {
+    @include respond-to(48em) {
       @include span-columns(3, 6.5);
       @include nth-omega(2n);
     }    

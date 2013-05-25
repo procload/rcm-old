@@ -18,7 +18,7 @@
         border: none;
       }
       .port-image {
-        @include at-breakpoint(48em 12) {
+        @include respond-to(48em) {
           @include span-columns(2,6.5);
         }
         text-align: center;
@@ -33,7 +33,7 @@
         }
       }
       .about-item  {
-        @include at-breakpoint(48em 12) {
+        @include respond-to(48em) {
           @include span-columns(4 omega,6.5);
         }
       }

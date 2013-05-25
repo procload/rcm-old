@@ -114,7 +114,7 @@ blockquote {
 
 ul {
   margin: 0 0 calc-em(18px) calc-em(18px);
-  @include at-breakpoint(36em 12) {
+  @include respond-to(36em) {
     margin-left: 0;
   }    
   
@@ -183,7 +183,7 @@ a {
     font-size: calc-em(24px);
     margin: 0 0 calc-em(42px, 24px);
 
-    @include at-breakpoint(32em 12) {
+    @include respond-to(32em) {
       font-size: calc-em(32px);
       .index & {
         margin-bottom: calc-em(12px);
@@ -237,7 +237,7 @@ a {
   border-bottom: 1px solid $gray;
   margin-bottom: calc-em(48px);
   
-  @include at-breakpoint(34em 12) {
+  @include respond-to(34em) {
     @include squish(1,1);  
   }
 
@@ -253,7 +253,7 @@ a {
     padding: calc-em(10px) 0;
     @include pad(.75, .75);
     h1 {
-      @include at-breakpoint(34em 12) {
+      @include respond-to(34em) {
       }
     }
   } //fixed-top
@@ -262,7 +262,7 @@ a {
     font-size: calc-em(28px);
     margin: 0 0 calc-em(21px, 28px);
     text-align: center;
-    @include at-breakpoint(34em 12) {
+    @include respond-to(34em) {
       float: left;
       text-align: left;
       margin: 0;
@@ -279,7 +279,7 @@ a {
 
   .nav-list {
     @extend %group;
-    @include at-breakpoint(34em 12) {
+    @include respond-to(34em) {
       float: right;
       width: 47%;
     }
@@ -290,7 +290,7 @@ a {
     width: 32%;  
     text-align: center;
     margin: 0;
-    @include at-breakpoint(34em 12) {
+    @include respond-to(34em) {
       width: 32%;  
       text-align: right;
     }
@@ -304,7 +304,7 @@ a {
       &.current {
         color: $linkColor;
       }
-      @include at-breakpoint(34em 12) {
+      @include respond-to(34em) {
         line-height: 2em;
       }
     } //a
@@ -317,7 +317,7 @@ a {
     width: 53%;
     margin: calc-em(18px) auto;
   }
-  @include at-breakpoint(34em 12) {
+  @include respond-to(34em) {
     @include pad(2.25,2.25);
   }
   h1, h2 {
@@ -351,7 +351,7 @@ a {
 .bio,
 .recent-posts {
   margin-bottom: calc-em(48px);
-  @include at-breakpoint(34em 12) {
+  @include respond-to(34em) {
     @include pad(2,2);
   }
 } //bio //recent-posts
@@ -362,7 +362,7 @@ a {
 
 .section-body {
   margin-bottom: calc-em(48px);
-  @include at-breakpoint(34em 12) {
+  @include respond-to(34em) {
     @include pad(2.25,2.25);
   }
 }
@@ -371,7 +371,7 @@ a {
 
   color: lighten($gray-dark, 20%);
   margin-bottom: calc-em(48px);
-  @include at-breakpoint(34em 12) {
+  @include respond-to(34em) {
     @include pad(2.25,2.25);
   }
 }
@@ -410,7 +410,7 @@ a {
   }
   .footer-posts {
     margin-bottom: calc-em(32px);
-    @include at-breakpoint(34em 12) {
+    @include respond-to(34em) {
       @include prefix(2);
       @include span-columns(5);
     }
@@ -422,7 +422,7 @@ a {
     }
   }
   .footer-colophon {
-    @include at-breakpoint(34em 12) {
+    @include respond-to(34em) {
       @include span-columns(3);
     }
   }
