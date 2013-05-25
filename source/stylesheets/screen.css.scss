@@ -217,6 +217,9 @@ a {
     -moz-mask-position-x: 0px;
     -moz-mask-position-y: 50%;
 
+    @include ie8 {
+      background: transparent image-url('img-avatar-old.png');
+    }
 
   } //mugshot
 
