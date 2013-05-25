@@ -235,19 +235,19 @@ $breakLarge: 1024px;
 // IE HACKS
 // --------------------------------------------------
 @mixin ie7 {
-  * + html & { // Using browser hacks
+  * + html.lt-ie8 & { // Using browser hacks
     @content;
   }
 }
 
 @mixin ie8 {
-  html.ie8 & { // Using Paul Irish's conditional comments
+  html.lt-ie9 & { // Using Paul Irish's conditional comments
     @content;
   }
 }
 
 @mixin ie9 {
-  html.ie9 & { // Using Paul Irish's conditional comments
+  html.lt-ie10 & { // Using Paul Irish's conditional comments
     @content;
   }
 }
