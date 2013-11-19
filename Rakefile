@@ -1,3 +1,5 @@
+require 'middleman-gh-pages'
+
 desc "Build the website from source"
 task :build do
   puts "## Building website"
