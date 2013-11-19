@@ -33,11 +33,6 @@
 <%= stylesheet_link_tag "screen.css" %>
 <link rel='stylesheet' href='stylesheets/print.css' type='text/css' media='print' />
 <%= javascript_include_tag "libs/modernizr.js" %>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<%= javascript_include_tag "libs/jquery.stickyPanel.js" %>
-<%= javascript_include_tag "rcm.js" %>
-
-
 
 
 <!-- Feedburner -->
@@ -53,7 +48,7 @@
 })();
 </script>
 </head>
-<body class="<%= page_classes %>">
+<body class="<%= page_classes %>" onload="prettyPrint()">
 
 <header class="site-header">
   <nav class="site-nav">
@@ -110,13 +105,6 @@ var _gaq=[['_setAccount','UA-8516683-1'],['_trackPageview'],['_trackPageLoadTime
  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-
-<!-- Prompt IE 6 users to install Chrome Frame.
-         chromium.org/developers/how-tos/chrome-frame-getting-started -->
-<!--[if lt IE 7 ]>
-      <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
 
 </body>
 </html>
