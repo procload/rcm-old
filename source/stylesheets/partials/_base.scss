@@ -42,6 +42,7 @@ $linkHoverColor:                   darken($linkColor, 5%);
 //Typography
 $base-font-family:                "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia, Times, "Times New Roman", serif;
 $text-color:                       $gray-dark;
+$font-size-base:                  17px;
 $baseFontSize:                    17px;
 $baseLineHeight:                  1.618;
 
@@ -64,17 +65,3 @@ $side-gutter-width: 1em; // Loosely taken from modular scale
 
 // Imports & Includes
 // --------------------------------------------------
-
-//Reset Styles
-@import "compass/reset";
-
-// Compass files to load
-@import "susy";
-@import "compass/css3";
-
-// My Mixins
-@import "partials/custom_mixins";
-
-@import "partials/code";
-@import "partials/prettify";
-@import "partials/font_awesome";

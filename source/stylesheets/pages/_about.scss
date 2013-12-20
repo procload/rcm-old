@@ -1,0 +1,39 @@
+body.about {
+  .about-header {
+  }
+  hr {
+    clear: both;
+  }
+  .about-me {
+  }
+  .about-list {
+    margin-bottom: calc-em(16px);
+    @include respond-to(48em) {
+      @include span-columns(3, 6.5);
+      @include nth-omega(2n);
+    }    
+    &.interested {
+      @include ie8 {
+        @include omega;
+      }
+    }
+  }
+  .twitter {
+    color: #3cf;
+  }
+  .dribbble {
+    color: #ea4c89;
+  }
+  .github {
+    color: #4183c4;
+  }
+  .flickr {
+    color: #0063dc;
+  }
+  .rdio {
+    color: #007dc3;
+  }
+  .linkedin {
+    color: #0181b2;
+  }
+}

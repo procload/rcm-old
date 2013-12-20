@@ -1,4 +1,17 @@
 @import 'partials/base';
+
+//Reset Styles
+@import "compass/reset";
+
+@import "compass/css3";
+@import "susy";
+@import "partials/custom_mixins";
+
+// My Mixins
+
+@import "partials/code";
+@import "partials/prettify";
+@import "partials/font_awesome";
 @import 'pages/about';
 @import 'pages/work';
 @import 'pages/writing';

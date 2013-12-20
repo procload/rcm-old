@@ -1,0 +1,5 @@
+/* All shameful, hacky CSS goes here. Should fix these things later, but due to time contraints these are gonna have to stay for now. */
+
+body:not(:-moz-handler-blocked) .mugshot {
+  @include border-radius(120px);
+}
