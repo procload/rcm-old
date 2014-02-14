@@ -5,75 +5,97 @@ nav: 'work'
 <header class="section-header">
   <h1>Work</h1>
   <hr />
-  <h2>I am the designer/developer hybrid that's not supposed to exist. Many of the best design decisions come when working with HTML and CSS. You can view more of my <%= link_to 'designs on Dribbble', 'http://dribbble.com/procload'%>, or my code on <%= link_to 'Github', 'http://github.com/procload' %>.</h2>
+  <h2>I am a designer/developer hybrid that is just as much interested in what is behind the pretty pictures as is what's on top. You can view more of my <%= link_to 'designs on Dribbble', 'http://dribbble.com/procload'%> or my code on <%= link_to 'Github', 'http://github.com/procload' %>.</h2>
 </header>
 <!-- /about-header -->
 <section class="section-body">
 
-<ul class="portfolio-list">
-  
-  <li class="portfolio-item ebth">
-  <div class="port-image">
-    <%= link_to image_tag('work/img-ebth@2x.png', :alt => 'Everything but the House'), '/work/ebth.html', :title => 'Everything but the House' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'Everything but the House', '/work/ebth.html' %></h1>
-      <h2>Everything but the House is an online bidding website that specializes in estate sales. I did UI design work, built the front-end and helped implement the front-end code into a Ruby on Rails app.</h2>
-    </div>
-  </li>
+  <ul class="portfolio-list">
+    <li class="portfolio-item madtree">
+    <a href="/work/madtree.html">
+      <div class="port-image">
+        <%= image_tag('work/img-madtree@2x.png', :alt => 'MadTree Brewing') %>
+      </div>
+      <div class="about-item">
+        <h1>MadTree Brewing</h1>
+        <h2>Website Design and Development</h2>
+      </div>
+    </a>
+    </li>
 
-  <li class="portfolio-item qcm">
-  <div class="port-image">
-    <%= link_to image_tag('work/img-qcm.png', :alt => 'qcm'), '/work/qcm.html', :title => 'Queen City Merge' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'Queen City Merge', '/work/qcm.html' %></h1>
-      <h2>Queen City Merge is an annual two-day conference held in Cincinnati, Ohio designed to bring together designers and developers to learn from one another. I helped organize the event and designed and built the responsive website.</h2>
-    </div>
-  </li>
+    <li class="portfolio-item madtree">
+    <a href="/work/madtree.html">
+      <div class="port-image">
+        <%= image_tag('work/img-cladwell@2x.png', :alt => 'Cladwell') %>
+      </div>
+      <div class="about-item">
+        <h1>Cladwell</h1>
+        <h2>User Experience; UI Design and Development</h2>
+      </div>
+    </a>
+    </li>
 
-  <li class="portfolio-item ample-cms">
-  <div class="port-image">
-    <%= link_to image_tag('work/img-ample.png', :alt => 'Ample'), '/work/ample-cms.html', :title => 'Ample CMS' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'Ample CMS', '/work/ample-cms.html' %></h1>
-      <h2>Ample CMS is a powerful and customizable content management system designed to be easy to use with minimal fuss. I designed and developed the front-end of Ample CMS and helped integrate the markup into its Rails foundation.</h2>
-    </div>
-  </li>
-  <li class="portfolio-item yocal">
-  <div class="port-image">
+    <li class="portfolio-item ebth">
+    <a href="/work/ebth.html">
+      <div class="port-image">
+        <%= image_tag('work/img-ebth@2x.png', :alt => 'Everything but the House') %>
+      </div>
+      <div class="about-item">
+        <h1>Everything But the House</h1>
+        <h2>User Experience; UI Design and Development</h2>
+      </div>
+    </a>
+    </li>
 
-    <%= link_to image_tag('work/img-yocal@2x.png', :alt => 'yocal'), '/work/yocal.html', :title => 'Yocal' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'Yocal', '/work/yocal.html' %></h1>
-      <h2>Yocal is a local news aggregator that helps employers retain and attract new employees. I designed and developed the front-end of the site and implemented it into a custom Rails app. I also worked on implementing a custom admin for Yocal staff that makes it easy for employers to track community enagement among their employees.</h2>
-    </div>
-  </li>
+    <li class="portfolio-item qcm">
+    <a href="/work/qcmerge.html">
+      <div class="port-image">
+        <%= image_tag('work/img-qcm@2x.png', :alt => 'qcm') %>
+      </div>
+      <div class="about-item">
+        <h1>Queen City Merge</h1>
+        <h2>Website Design and Development</h2>
+      </div>
+    </a>
+    </li>
 
-  <li class="portfolio-item brandery">
-  <div class="port-image">
+    <li class="portfolio-item ample-cms">
+    <a href="/work/ample-cms.html">
+      <div class="port-image">
+        <%= image_tag('work/img-ample@2x.png', :alt => 'Ample') %>
+      </div>
+      <div class="about-item">
+        <h1>Ample CMS</h1>
+        <h2>User Experience; UI Design and Development</h2>
+      </div>
+    </a>
+    </li>
+    <li class="portfolio-item yocal">
+    <a href="/work/yocal.html">
+      <div class="port-image">
+        <%= image_tag('work/img-yocal@2x.png', :alt => 'yocal') %>
+      </div>
+      <div class="about-item">
+        <h1>Yocal</h1>
+        <h2>User Experience; UI Design and Development</h2>
+      </div>
+    </a>
+    </li>
 
-    <%= link_to image_tag('work/img-brandery@2x.png', :alt => 'brandery'), '/work/brandery.html', :title => 'The Brandery' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'The Brandery', '/work/brandery.html' %></h1>
-      <h2>The Brandery is a startup accelerator based in Cincinnati. I worked from a static design file to turn the design into a responsive site by appropriating many of the styles and starting with a small-screen development workflow.</h2>
-    </div>
-  </li>
+    <li class="portfolio-item brandery">
+    <a href="/work/brandery.html">
+      <div class="port-image">
+        <%= image_tag('work/img-brandery@2x.png', :alt => 'brandery') %>
+      </div>
+      <div class="about-item">
+        <h1>The Brandery</h1>
+        <h2>UI Development</h2>
+      </div>
+    </a>
+    </li>
 
-  <li class="portfolio-item chub">
-  <div class="port-image">
-    <%= link_to image_tag('work/img-logo-chub.jpg', :alt => 'CoachHub'), '/work/chub.html', :title => 'CoachHub' %>
-  </div>
-    <div class="about-item">
-      <h1><%= link_to 'Coach Hub', '/work/chub.html' %></h1>
-      <h2>CoachHub is a <%= link_to 'youth sports team-management website', 'http://coachhub.com/', :target => '_blank', :title => 'CoachHub' %> built on Rails to help parents manage carpools, line-ups, photos and other team-related information. I designed and developed the public and administrator UI for the website. </h2>
-    </div>
-  </li>
-  
 
-</ul>
-<!-- /portfolio-list -->
+
+  </ul>
+  <!-- /portfolio-list -->
 </section>

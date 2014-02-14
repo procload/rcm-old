@@ -3,32 +3,53 @@
 @import 'partials/base';
 .work {
   .section-header {
-    margin-bottom: calc-em(72px);
+    margin-bottom: calc-em(32px);
   }
   .computer {
     margin-bottom: 0;
   }
   .portfolio-list {
-
+    display: inline-block;
+    font-size: .1px;
+    &:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
     .portfolio-item {
+      font-size: calc-em(14px, .1px);
+      overflow: hidden;
+      > a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        .about-item {
+          background: $white;
+          background: rgba(0,0,0,.85);
+          position: absolute;
+          top: 300px;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          @include transition(.15s ease-in all); 
+        }
+        &:hover {
+          .about-item {
+            top: 0;
+          }
+        }
+      }
+      display: inline-block;
+      width: 25%;
       list-style-type: none;
       font-style: normal;
-      @extend %group;
-      margin-bottom: calc-em(48px);
-      padding-bottom: calc-em(48px);
-      border-bottom: 1px solid $gray;
       &:last-child {
         border: none;
       }
       .port-image {
-        @include respond-to(48em) {
-          @include span-columns(2,6.5);
-        }
         text-align: center;
+        padding: calc-em(16px);
         img {
-          margin: 0 auto calc-em(16px);
-          border: none;
-          width: auto;
           @include box-shadow(none);
           @include respond-to(48em) {
             margin: 0 auto;
@@ -36,22 +57,28 @@
         }
       }
       .about-item  {
-        @include respond-to(48em) {
-          @include span-columns(4 omega,6.5);
+        padding: calc-em(16px);
+        color: #CCC;
+        h1 {
+          color: $white;
         }
-      }
-      h1 {
-        font-size: calc-em(24px);
-      }
-      h2 {
-        font-size: calc-em(18px);
-        font-weight: 400;
-        line-height: calc-em(27px, 18px);
-        font-family: $base-font-family;
+        h1 {
+          font-size: calc-em(24px);
+          margin-bottom: calc-em(12px, 24px);
+          padding-bottom: calc-em(12px, 24px);
+          border-bottom: 3px solid $white;
+        }
+        h2 {
+          font-size: calc-em(18px);
+          font-weight: 400;
+          line-height: calc-em(27px, 18px);
+          font-family: $base-font-family;
+        }
       }
     }
   }
   .section-body {
+    @include pad(.5,.5);
     h3 {
       margin-bottom: calc-em(8px);
     }
