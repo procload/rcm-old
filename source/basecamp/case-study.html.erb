@@ -1,0 +1,63 @@
+---
+type: ''
+nav: 'case-study'
+---
+
+<article class="case-study-article">
+  <header class="section-header case-study-header">
+    <h1>Cladwell</h1>
+    <hr />
+    <h2>Cladwell approached a colleague and myself to rethink the user experience and flow of their product.</h2>
+  </header>
+  <div class="case-study-body section-body">
+    <p><%= link_to "Cladwell is a web product", "http://cladwell.com" %> aimed at guys who know they want to dress well, but either don't have the time to put into finding the right clothes or the knowledge to know what is best.</p>
+    <p>The site was rapidly built by developers without much thought toward the user experience. So while the underlying technology was solid, the interface needed a face lift.</p>
+    <h3>Static Won't Cut It</h3>
+    <p>The client didn't have the budget for a native app and wanted the product be accessible on any screen size.</p>
+    <p>Static wireframes weren't going to cut it for the responsive contraints and the level of interaction design required. We used <%= link_to "Middleman", "http://middlemanapp.com" %>, a Ruby-based static-site generator, as a that helped us demonstrate our interaction designs to the client in the browser.</p>
+  </div>
+  <div class="section-image-row resp">
+    <hr />
+    <%= image_tag "work/cladwell/img-resp-1.png" %>
+    <%= image_tag "work/cladwell/img-resp-2.png" %>
+    <h4 class="caption">Cladwell had to feature great interaction design on any screen size</h4>
+    <hr />
+  </div>
+  <div class="section-body">
+    <p>We setup an instance on Heroku and gave the client access to view the prototype whenever they wanted so they could always reference the latest round of revisions, even if they weren't 100 percent complete.</p>
+    <p>Since Cladwell is the full-time gig of its founders, the client was heavily involved from the beginning. We brainstormed ideas on paper, made real-time changes using Chrome's developer tools and tried to get the client involved as part of the team instead of an outside observer.</p>
+    <p>Basecamp allowed us to quickly share animated gifs, minor design revisions and content among the whole team without any of us having to slow down.</p>
+  </div>
+  <div class="section-image-row gifs">
+    <hr />
+    <%= image_tag "work/cladwell/comments.gif" %>
+    <%= image_tag "work/cladwell/checklist.gif" %>
+    <h4 class="caption">Basecamp allowed us to easily collaborate with the client through animated gifs and sketches</h4>
+    <hr />
+  </div>
+  <div class="section-body">
+    <!-- Insert Animated Gif and Wireframe Revision Pictures here -->
+    <h3>Bootstrap as Scaffolding</h3>
+    <p>We setup the project using Twitter Bootstrap as a foundation to minimize the time spent on redesigning generic UI elements such as modals and form-control styling. Once we had the wireframes translated into the browser and approved by the client, we took our styles and applied them to Bootstrap's to work closer to a finished product.</p>
+    <p>Design in HTML, CSS and JavaScript for interaction has its benefits over Photoshop because of its ability to remove abstraction, but sometimes it's a necessity to jump into a graphic program for fine-tuning. We took the wireframes for the most important section of the site into Photoshop where we applied textures, refined typography and defined a color palette. With the designs finalized and approved by the client we were ready to start refining the UI.</p>
+    <p>Much of the HTML and CSS was written in modular way, which made it easy to quickly apply our styles across the site without negatively affecting any work we had previously done.</p>
+  </div>
+  <div class="section-image-row process">
+    <hr />
+    <%= image_tag "work/cladwell/img-process-1.png" %>
+    <%= image_tag "work/cladwell/img-process-2.png" %>
+    <%= image_tag "work/cladwell/img-process-3.png" %>
+    <h4 class="caption">We started off with pen and paper sketches before moving into clickable wireframes with Bootstrap and refining with designed HTML &amp; CSS deliverables</h4>
+    <hr />
+  </div>
+  <div class="section-body">
+    <h3>Delivering the Product</h3>
+    <p>The back-end of Cladwell was built in Rails, which made the hand-off all that much easier since Middleman uses .erb template files. Cladwell's back-end developer was able to cross reference our <%= link_to "working prototype", "http://cladwellux.herokuapp.com/" %> to the code he was implementing to make sure the designs matched up.</p>
+    <p>Cladwell has since hired a full-time UI designer and changed the layer of paint applied on top of our working prototype, but the user experience, clever interactions and responsive layout remain intact.</p>
+    <p>You can view our user experience and interaction design work on the latest version of the prototype at <%= link_to "http://cladwellux.herokuapp.com/", "http://cladwellux.herokuapp.com" %>.</p>
+  </div>
+  
+</article>
+<!-- /workpiece -->
+
+

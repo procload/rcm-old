@@ -3,6 +3,7 @@
 @import 'pages/work';
 @import 'pages/writing';
 @import 'pages/resume';
+@import 'pages/basecamp';
 @import 'shame';
 
 // Global Layout Styles
@@ -75,15 +76,21 @@ h1 {
 
 h3 {
   font-family: $base-font-family;
-  font-size: calc-em(21px);
-  margin-bottom: calc-em(3px, 16px);
-  font-weight: 500;
+  font-size: calc-em(17px);
+  margin-bottom: calc-em(3px, 17px);
+  font-weight: 400;
+  @include respond-to(31.25em) {
+    font-size: calc-em(21px);
+  }
 }
 
 p {
-  font-size: calc-em(18px);
+  font-size: calc-em(17px);
   line-height: 1.617em;
-  margin: 0 0 1em;
+  margin: 0 0 1.25em;
+  @include respond-to(31.25em) {
+    font-size: calc-em(21px);
+  }
 }
 
 hr {
@@ -191,6 +198,13 @@ a {
     }
   } //h2
 
+
+
+  > hr {
+    margin: 0 0 calc-em(48px);
+  }
+} //site-header
+
   .mugshot {
     margin-bottom: calc-em(48px);
     background-image: image-url('img-avatar@2x.png');
@@ -222,13 +236,6 @@ a {
     }
 
   } //mugshot
-
-
-  > hr {
-    margin: 0 0 calc-em(48px);
-  }
-} //site-header
-
 .site-nav {
   
   @extend %group;
@@ -238,31 +245,18 @@ a {
   margin-bottom: calc-em(48px);
   
   @include respond-to(34em) {
-    @include squish(1,1);  
+    @include squish(.5,.5);
+  }
+  @include respond-to(47.5em) {
+    @include squish(1,1); 
   }
 
-  &.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0 !important;
-    right: 0;
-    background: $white;
-    z-index: 500;
-    margin: 0;
-    @include pad(.75, .75);
-    padding: calc-em(10px) 0;
-    @include pad(.75, .75);
-    h1 {
-      @include respond-to(34em) {
-      }
-    }
-  } //fixed-top
 
   h1 {
     font-size: calc-em(28px);
     margin: 0 0 calc-em(21px, 28px);
     text-align: center;
-    @include respond-to(34em) {
+    @include respond-to(40em) {
       float: left;
       text-align: left;
       margin: 0;
@@ -279,32 +273,30 @@ a {
 
   .nav-list {
     @extend %group;
-    @include respond-to(34em) {
+    @include respond-to(40em) {
       float: right;
-      width: 47%;
+      width: 57%;
     }
   } //nav-list
 
   li {
     display: inline-block;
     width: 32%;  
+    box-sizing: border-box;
     text-align: center;
     margin: 0;
-    @include respond-to(34em) {
-      width: 32%;  
-      text-align: right;
-    }
 
     a {
       font-weight: 400;
       font-style: italic;
       font-family: $base-font-family;
-      font-size: calc-em(18px);
+      font-size: calc-em(16px);
       line-height: 1em;
       &.current {
         color: $linkColor;
       }
       @include respond-to(34em) {
+        font-size: calc-em(18px);
         line-height: 2em;
       }
     } //a
@@ -318,7 +310,13 @@ a {
     margin: calc-em(18px) auto;
   }
   @include respond-to(34em) {
-    @include pad(2.25,2.25);
+    @include pad(.5,.5);
+  }
+  @include respond-to(47.5em) {
+    @include pad(1,1); 
+  }
+  @include respond-to(70em) {
+    @include pad(2,2);
   }
   h1, h2 {
     text-align: center;
@@ -326,16 +324,22 @@ a {
   h1 {
     font-family: $base-font-family;
     font-weight: 400;
-    font-size: calc-em(48px);
-    margin: 0 0 calc-em(12px, 48px);
+    font-size: calc-em(36px);
+    margin: 0 0 calc-em(12px, 36px);
+    @include respond-to(31.25em) {
+      font-size: calc-em(48px);
+    }
   }
   h2 {
     font-family: $base-font-family;
     font-style: italic;
     font-weight: 400;
     line-height: 1.618em;
-    font-size: calc-em(24px);
-    margin-bottom: calc-em(24px, 24px);
+    font-size: calc-em(21px);
+    margin-bottom: calc-em(21px, 21px);
+    @include respond-to(31.25em) {
+      font-size: calc-em(28px);
+    }
   }
 }
 
@@ -363,16 +367,105 @@ a {
 .section-body {
   margin-bottom: calc-em(48px);
   @include respond-to(34em) {
-    @include pad(2.25,2.25);
+    @include pad(.5,.5);
+  }
+  @include respond-to(47.5em) {
+    @include pad(1,1); 
+  }
+  @include respond-to(70em) {
+    @include pad(2,2);
   }
 }
+.page-body {
+  margin-bottom: calc-em(48px);
+  h3 {
+    font-weight: 800;
+    font-size: calc-em(18px);
+  }
+}
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
+}
+#imagelightbox-overlay {
+  background-color: #fff;
+  background-color: rgba( 255, 255, 255, .9 );
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#imagelightbox-close
+{
+  width: 2.5em; /* 40 */
+  height: 2.5em; /* 40 */
+  text-align: left;
+  text-indent: -9999px;
+  background-color: #666;
+  position: fixed;
+  z-index: 10002;
+  top: 2.5em; /* 40 */
+  right: 2.5em; /* 40 */
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+#imagelightbox-close:hover
+{
+  background-color: #111;
+}
+#imagelightbox-close:before,
+#imagelightbox-close:after
+{
+  width: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -1px;
+}
+#imagelightbox-close:before
+{
+  -webkit-transform: rotate( 45deg );
+  -moz-transform: rotate( 45deg );
+  -ms-transform: rotate( 45deg );
+  -o-transform: rotate( 45deg );
+  transform: rotate( 45deg );
+}
+#imagelightbox-close:after
+{
+  -webkit-transform: rotate( -45deg );
+  -moz-transform: rotate( -45deg );
+  -ms-transform: rotate( -45deg );
+  -o-transform: rotate( -45deg );
+  transform: rotate( -45deg );
+}
+
 
 .section-footer {
 
   color: lighten($gray-dark, 20%);
   margin-bottom: calc-em(48px);
   @include respond-to(34em) {
-    @include pad(2.25,2.25);
+    @include pad(.5,.5);
+  }
+  @include respond-to(47.5em) {
+    @include pad(1,1); 
+  }
+  @include respond-to(70em) {
+    @include pad(2,2);
   }
 }
 

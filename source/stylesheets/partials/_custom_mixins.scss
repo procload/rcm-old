@@ -2,7 +2,7 @@
 //    MATH & LAYOUT   												 //
 // ------------------------------------------- //
 
-@function calc-em($target-px, $context: $base-font-size) {
+@function calc-em($target-px, $context: 16px) {
   @return ($target-px / $context) * 1em;
 }
 

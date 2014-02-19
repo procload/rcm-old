@@ -31,7 +31,7 @@
           right: 0;
           left: 0;
           bottom: 0;
-          @include transition(.15s ease-in all); 
+          @include transition(.1s ease-in all); 
         }
         &:hover {
           .about-item {
@@ -40,7 +40,7 @@
         }
       }
       display: inline-block;
-      width: 25%;
+      width: 33.3333%;
       list-style-type: none;
       font-style: normal;
       &:last-child {
@@ -72,7 +72,11 @@
           font-size: calc-em(18px);
           font-weight: 400;
           line-height: calc-em(27px, 18px);
+          margin-bottom: calc-em(18px, 18px);
           font-family: $base-font-family;
+        }
+        span {
+          color: $white;
         }
       }
     }
@@ -84,23 +88,36 @@
     }
 
     img {
-      border: 1px solid $white;
-      @include box-shadow(rgba(0,0,0,.1) 0 0 6px);
       margin-bottom: calc-em(72px);
+      &.dash {
+        display: block;
+        margin: 0 auto;
+      }
       &.computer {
         border: none;
         @include box-shadow(none);
       }
     }
   }
+  .yocal .responsive-images {
+
+    .res-image {
+      width: 33%;
+    
+    }
+  
+  }
   .responsive-images {
     @extend %group;
     text-align: center;
     .res-image {
-      width: 33%;
+      width: 40%;
       float: left;
       img {
         width: 90%;
+      }
+      &:last-child {
+        float: right;
       }
     }
   }

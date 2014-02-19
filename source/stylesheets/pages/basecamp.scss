@@ -1,0 +1,64 @@
+@import 'partials/base';
+
+.basecamp {
+  .mugshot {
+    display: block;
+    margin: 0 auto calc-em(36px);
+  }
+  &.basecamp_resume {
+    .main-content {
+      padding-top: 0;
+      border: none;
+    }
+  }
+  .section-image-row {
+    @include pad(.5,.5);
+    h4 {
+      clear: both;
+      font-weight: 400;
+      text-align: center;
+      @include squish(.5, .5);
+      @include respond-to(26.25em) {
+        @include squish(1,1);
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: calc-em(32px);
+      width: 100%;
+      @include respond-to(26.25em) {
+        width: 80%;
+      }
+      @include respond-to(51.25em) {
+        display: inline-block;
+        width: 45%;
+        &:first-child {
+          float: left;
+        }
+        &:last-of-type {
+          float: right;
+        }
+      }
+    }
+    hr {
+      margin: calc-em(32px) auto calc-em(32px);
+      width: 53%;
+      clear: both;
+    }
+    &.process {
+      @include respond-to(51.25em) {
+        img {
+          width: 30%;
+          padding: 0 1.5%;
+        }
+      }
+    }
+  }
+  .section-body {
+    margin-bottom: 0;
+    &:last-of-type {
+      margin-bottom: calc-em(64px);
+    }
+  }
+}

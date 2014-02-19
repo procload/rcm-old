@@ -67,7 +67,10 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    mini_portile (0.5.2)
     multi_json (1.8.2)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     padrino-core (0.10.7)
       activesupport (~> 3.2.0)
       http_router (~> 0.10.2)
@@ -123,6 +126,7 @@ DEPENDENCIES
   middleman-blog
   middleman-deploy (~> 0.0.9)
   middleman-gh-pages
+  nokogiri
   rake
   sass (~> 3.2.5)
   susy (~> 1.0.5)

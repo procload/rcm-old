@@ -15,6 +15,8 @@ helpers do
   end
 end
 
+# Set Basecamp layout
+page "/basecamp/*", layout: 'basecamp'
 
 # Set resume layout
 page "/resume/index.html", layout: 'resume'

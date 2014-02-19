@@ -1,5 +1,6 @@
 @import 'partials/base';
-body.resume {
+body.resume,
+body.basecamp_resume {
   .main-content {
     @extend %container;
     padding: calc-em(48px) 0;
@@ -7,10 +8,13 @@ body.resume {
   .resume-header,
   .resume-body,
   .resume-footer {
-    @include respond-to(36em) {
-      @include squish(1,1);
-    }
-    @include respond-to(69em) {
+  @include respond-to(34em) {
+    @include squish(.5,.5);
+  }
+  @include respond-to(47.5em) {
+    @include squish(1,1); 
+  }
+    @include respond-to(70em) {
       @include squish(2,2);
     }
   }
