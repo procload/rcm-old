@@ -19,6 +19,13 @@
     .portfolio-item {
       font-size: calc-em(14px, .1px);
       overflow: hidden;
+      display: inline-block;
+      list-style-type: none;
+      width: 100%;
+      font-style: normal;
+      @include respond-to(30em) {
+        width: 33.3333%;
+      }
       > a {
         display: block;
         position: relative;
@@ -39,10 +46,7 @@
           }
         }
       }
-      display: inline-block;
-      width: 33.3333%;
-      list-style-type: none;
-      font-style: normal;
+
       &:last-child {
         border: none;
       }
