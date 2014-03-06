@@ -13,13 +13,12 @@ html {
 }
 
 body {
+  @include background(darken(#FAFAFA, 1%));
   width: 100%;
-  font-family: $base-font-family;
-  color: $text-color;
-  @include background(#FAFAFA image-url('bg-page.png') repeat top left);
-
   border-top: 5px solid $gray-dark;
+  color: $text-color;
   font-size: 100%;
+  font-family: $base-font-family;
   line-height: $base-line-height;
 }
 
@@ -28,16 +27,16 @@ main {
 }
 
 %group {
-	*zoom:1;
-	&:before,
-	&:after {
-    visibility: hidden;
+  *zoom:1;
+  &:before,
+  &:after {
     display: block;
-    font-size: 0;
-    content: ".";
+    visibility: hidden;
     clear: both;
     height: 0;
-	}
+    content: ".";
+    font-size: 0;
+  }
 }
 
 
@@ -49,69 +48,69 @@ main {
 
 // Prevent FOUT
 .wf-loading {
-   h1, h2, h3,
-   h4, h5, h6,
-   p,
-   a,
-   time,
-   .nav-list li a {
-     display: none;
-   }
+  h1, h2, h3,
+  h4, h5, h6,
+  p,
+  a,
+  time,
+  .nav-list li a {
+    display: none;
+  }
 } //wf-loading
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: $headline-font-family;
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-family: $headline-font-family;
   line-height: 1.25;
 } //h1 - h6
 
 h1 {
-  font-family: $base-font-family;
   font-weight: 400;
+  font-family: $base-font-family;
 }
 
 
 h3 {
-  font-family: $base-font-family;
-  font-size: calc-em(17px);
-  margin-bottom: calc-em(3px, 17px);
-  font-weight: 400;
   @include respond-to(31.25em) {
     font-size: calc-em(21px);
   }
+  margin-bottom: calc-em(3px, 17px);
+  font-weight: 400;
+  font-size: calc-em(17px);
+  font-family: $base-font-family;
 }
 
 p {
-  font-size: calc-em(17px);
-  line-height: 1.617em;
-  margin: 0 0 1.25em;
   @include respond-to(31.25em) {
     font-size: calc-em(21px);
   }
+  margin: 0 0 1.25em;
+  font-size: calc-em(17px);
+  line-height: 1.617em;
 }
 
 hr {
-  background-color: lighten($gray, 10%);
-  border: none;
   height: 1px;
+  border: none;
+  background-color: lighten($gray, 10%);
 }
 
 .icon-bolt {
-   font-size: calc-em(32px);
-   margin: 0 auto calc-em(42px, 36px);
-   display: block;
-   text-align: center;
+  display: block;
+  margin: 0 auto calc-em(42px, 36px);
+  text-align: center;
+  font-size: calc-em(32px);
 } //icon-bolt
 
 blockquote {
-  font-style: italic;
   @include pad(1,1);
+  margin: 0 0 calc-em(34px);
 
   color: lighten($text-color, 25%);
-  margin: 0 0 calc-em(34px);
+  font-style: italic;
   p {
     font-size: calc-em(15px);
     line-height: 1.75em;
@@ -120,18 +119,18 @@ blockquote {
 
 
 ul {
-  margin: 0 0 calc-em(18px) calc-em(18px);
   @include respond-to(36em) {
     margin-left: 0;
-  }    
-  
+  }
+  margin: 0 0 calc-em(18px) calc-em(18px);
+
   li {
-    list-style-type: disc;
-    font-size: calc-em(18px);
-    line-height: calc-em(27px, 18px);
-    font-style: italic;
     list-style-position: inside;
     list-style-position: outside;
+    list-style-type: disc;
+    font-style: italic;
+    font-size: calc-em(18px);
+    line-height: calc-em(27px, 18px);
   }
 }
 
@@ -146,9 +145,9 @@ img {
 // Link Styles
 // --------------------------------------------------
 a {
-  text-decoration: none;
-  color: $blue;
   @include transition(all .2s linear);
+  color: $blue;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
@@ -172,23 +171,16 @@ a {
 
 .site-header {
   @extend %container;
-  text-align: center;
+  border-right: 1px solid lighten($gray, 13%);
+  border-left: 1px solid lighten($gray, 13%);
   background: $white;
-  border-left: 1px solid lighten($gray, 10%);
-  border-right: 1px solid lighten($gray, 10%);
-  
+  text-align: center;
+
   ul {
     margin: 0;
   }
 
   h2 {
-    font-family: $base-font-family;
-    font-style: italic;
-    font-weight: 400;
-    text-align: center;
-    line-height: 1.618em;
-    font-size: calc-em(24px);
-    margin: 0 0 calc-em(42px, 24px);
 
     @include respond-to(32em) {
       font-size: calc-em(32px);
@@ -196,6 +188,13 @@ a {
         margin-bottom: calc-em(12px);
       }
     }
+    margin: 0 0 calc-em(42px, 24px);
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc-em(24px);
+    font-family: $base-font-family;
+    line-height: 1.618em;
   } //h2
 
 
@@ -205,69 +204,68 @@ a {
   }
 } //site-header
 
-  .mugshot {
-    margin-bottom: calc-em(48px);
-    background-image: image-url('img-avatar@2x.png');
-    width: calc-em(240px);
-    height: calc-em(240px);
-    background-size: 100%;
-    text-indent: -99999;
-    
-    mask-image: image-url('avatar.svg');
-    mask-size: calc-em(240px) calc-em(240px);
-    mask-position: 0;
-    mask-position-x: 0px;
-    mask-position-y: 50%;
+.mugshot {
 
-    -webkit-mask-image: image-url('avatar.svg');
-    -webkit-mask-size: calc-em(240px) calc-em(240px);
-    -webkit-mask-position: 0;
-    -webkit-mask-position-x: 0px;
-    -webkit-mask-position-y: 50%;
-
-    -moz-mask-image: image-url('avatar.svg');
-    -moz-mask-size: calc-em(240px) calc-em(240px);
-    -moz-mask-position: 0;
-    -moz-mask-position-x: 0px;
-    -moz-mask-position-y: 50%;
-
-    @include ie9 {
-      background: transparent image-url('img-avatar-old.png');
-    }
-
-  } //mugshot
-.site-nav {
-  
-  @extend %group;
-  padding: calc-em(20px) 0;
-  @include transition(all .3s ease);
-  border-bottom: 1px solid $gray;
+  @include ie9 {
+    background: transparent image-url('img-avatar-old.png');
+  }
   margin-bottom: calc-em(48px);
-  
+  width: calc-em(240px);
+  height: calc-em(240px);
+  background-image: image-url('img-avatar@2x.png');
+  background-size: 100%;
+  text-indent: -99999;
+
+  mask-image: image-url('avatar.svg');
+  mask-size: calc-em(240px) calc-em(240px);
+  mask-position: 0;
+  mask-position-x: 0px;
+  mask-position-y: 50%;
+
+  -webkit-mask-image: image-url('avatar.svg');
+  -webkit-mask-size: calc-em(240px) calc-em(240px);
+  -webkit-mask-position: 0;
+  -webkit-mask-position-x: 0px;
+  -webkit-mask-position-y: 50%;
+
+  -moz-mask-image: image-url('avatar.svg');
+  -moz-mask-size: calc-em(240px) calc-em(240px);
+  -moz-mask-position: 0;
+  -moz-mask-position-x: 0px;
+  -moz-mask-position-y: 50%;
+
+} //mugshot
+.site-nav {
+
+  @extend %group;
+  @include transition(all .3s ease);
+
   @include respond-to(34em) {
     @include squish(.5,.5);
   }
   @include respond-to(47.5em) {
-    @include squish(1,1); 
+    @include squish(1,1);
   }
-
+  margin-bottom: calc-em(48px); //li
+  padding: calc-em(21px) 0;
+  border-bottom: 1px solid lighten($gray, 5%);
 
   h1 {
-    font-size: calc-em(28px);
-    margin: 0 0 calc-em(21px, 28px);
-    text-align: center;
     @include respond-to(40em) {
       float: left;
-      text-align: left;
       margin: 0;
-    }    
+      text-align: left;
+    }
+    margin: 0 0 calc-em(21px, 28px);
+    text-align: center;
+    font-size: calc-em(28px);
   } //h1
 
   a {
     color: $gray-dark;
     &:hover {
-      text-decoration: none;
       color: $linkColor;
+      text-decoration: none;
     }
   } //a
 
@@ -281,65 +279,65 @@ a {
 
   li {
     display: inline-block;
-    width: 32%;  
     box-sizing: border-box;
+    margin: 0; //a
+    width: 32%;
     text-align: center;
-    margin: 0;
 
     a {
-      font-weight: 400;
-      font-style: italic;
-      font-family: $base-font-family;
-      font-size: calc-em(16px);
-      line-height: 1em;
-      &.current {
-        color: $linkColor;
-      }
       @include respond-to(34em) {
         font-size: calc-em(18px);
         line-height: 2em;
       }
-    } //a
-  } //li
+      font-weight: 400;
+      font-style: italic;
+      font-size: calc-em(16px);
+      font-family: $base-font-family;
+      line-height: 1em;
+      &.current {
+        color: $linkColor;
+      }
+    }
+  }
 } //site-nav
 
 .section-header {
-  margin-bottom: calc-em(24px);
-  hr {
-    width: 53%;
-    margin: calc-em(18px) auto;
-  }
   @include respond-to(34em) {
     @include pad(.5,.5);
   }
   @include respond-to(47.5em) {
-    @include pad(1,1); 
+    @include pad(1,1);
   }
   @include respond-to(70em) {
     @include pad(2,2);
+  }
+  margin-bottom: calc-em(24px);
+  hr {
+    margin: calc-em(18px) auto;
+    width: 53%;
   }
   h1, h2 {
     text-align: center;
   }
   h1 {
-    font-family: $base-font-family;
-    font-weight: 400;
-    font-size: calc-em(36px);
-    margin: 0 0 calc-em(12px, 36px);
     @include respond-to(31.25em) {
       font-size: calc-em(48px);
     }
+    margin: 0 0 calc-em(14px, 36px);
+    font-weight: 400;
+    font-size: calc-em(36px);
+    font-family: $base-font-family;
   }
   h2 {
-    font-family: $base-font-family;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.618em;
-    font-size: calc-em(21px);
-    margin-bottom: calc-em(21px, 21px);
     @include respond-to(31.25em) {
       font-size: calc-em(28px);
     }
+    margin-bottom: calc-em(21px, 21px);
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc-em(21px);
+    font-family: $base-font-family;
+    line-height: 1.618em;
   }
 }
 
@@ -347,17 +345,17 @@ a {
 //  *************************************
 .main-content {
   @extend %container;
+  border-right: 1px solid lighten($gray, 13%);
+  border-left: 1px solid lighten($gray, 13%);
   background: $white;
-  border-left: 1px solid lighten($gray, 10%);
-  border-right: 1px solid lighten($gray, 10%);
 } //main-content
 
 .bio,
 .recent-posts {
-  margin-bottom: calc-em(48px);
   @include respond-to(34em) {
     @include pad(2,2);
   }
+  margin-bottom: calc-em(48px);
 } //bio //recent-posts
 
 .bio {
@@ -365,7 +363,6 @@ a {
 } //bio
 
 .section-body {
-  margin-bottom: calc-em(48px);
   @include respond-to(34em) {
     @include pad(.5,.5);
   }
@@ -375,6 +372,7 @@ a {
   @include respond-to(70em) {
     @include pad(2,2);
   }
+  margin-bottom: calc-em(48px);
 }
 .page-body {
   margin-bottom: calc-em(48px);
@@ -388,31 +386,31 @@ a {
   z-index: 9999;
 }
 #imagelightbox-overlay {
-  background-color: #fff;
-  background-color: rgba( 255, 255, 255, .9 );
   position: fixed;
-  z-index: 9998;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 9998;
+  background-color: #fff;
+  background-color: rgba( 255, 255, 255, .9 );
 }
 
 #imagelightbox-close
 {
-  width: 2.5em; /* 40 */
-  height: 2.5em; /* 40 */
-  text-align: left;
-  text-indent: -9999px;
-  background-color: #666;
   position: fixed;
-  z-index: 10002;
   top: 2.5em; /* 40 */
   right: 2.5em; /* 40 */
+  z-index: 10002;
+  width: 2.5em; /* 40 */
+  height: 2.5em; /* 40 */
 
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  background-color: #666;
+  text-align: left;
+  text-indent: -9999px;
 
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
@@ -427,14 +425,14 @@ a {
 #imagelightbox-close:before,
 #imagelightbox-close:after
 {
-  width: 2px;
-  background-color: #fff;
-  content: '';
   position: absolute;
   top: 20%;
   bottom: 20%;
   left: 50%;
   margin-left: -1px;
+  width: 2px;
+  background-color: #fff;
+  content: '';
 }
 #imagelightbox-close:before
 {
@@ -457,7 +455,6 @@ a {
 .section-footer {
 
   color: lighten($gray-dark, 20%);
-  margin-bottom: calc-em(48px);
   @include respond-to(34em) {
     @include pad(.5,.5);
   }
@@ -467,6 +464,7 @@ a {
   @include respond-to(70em) {
     @include pad(2,2);
   }
+  margin-bottom: calc-em(48px);
 }
 
 
@@ -474,22 +472,20 @@ a {
 //  *************************************
 
 .site-footer {
-  background: #FAFAFA;
-  border-top: 1px solid $gray;
-  padding: calc-em(20px) 0;
+  @include background(darken(#FAFAFA, 1%));
 
   h3 {
+    margin-bottom: calc-em(8px, 13px);
+    color: darken(#FAFAFA, 60%);
+    text-transform: uppercase;
     font-weight: 700;
     font-size: calc-em(13px);
-    margin-bottom: calc-em(8px, 13px);
-    text-transform: uppercase;
     font-family: $alt-font-family;
-    color: darken(#FAFAFA, 60%);
   }
   p {
+    color: darken(#FAFAFA, 60%);
     font-size: calc-em(15px);
     line-height: calc-em(22px, 15px);
-    color: darken(#FAFAFA, 60%);
     a {
       color: $text-color;
       &:hover {
@@ -498,19 +494,22 @@ a {
     }
   }
   .footer-content {
+    padding-top: calc-em(47px);
+    padding-bottom: calc-em(21px);
     @extend %container;
     @extend %group;
+    border-top: 1px solid lighten($gray,13%);
   }
   .footer-posts {
-    margin-bottom: calc-em(32px);
     @include respond-to(34em) {
       @include prefix(2);
       @include span-columns(5);
     }
+    margin-bottom: calc-em(32px);
     ul {
       font-size: calc-em(15px, 18px);
       li {
-        margin: 0 0 calc-em(6px, 15px)
+        margin: 0 0 calc-em(6px, 15px);
       }
     }
   }
