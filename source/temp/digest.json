@@ -1,0 +1,71 @@
+{
+  "content": [
+  {
+    "recipes" : [
+    {
+      "title" : "GENIUS RED WINE VINAIGRETTE",
+      "url" : "https://food52.com/blog/10626-molly-wizenberg-brandon-pettit-s-red-wine-vinaigrette",
+      "description" : "We have the secret to making your salad taste like a million bucks.",
+      "image" : "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/10278bf7-6ec1-4257-adc0-a5683bf426fc.jpg",
+      "featured" : "true"
+    },
+    {
+      "title" : "AMANDA HESSER'S BROWN BUTTER RASPBERRIES",
+      "url" : "https://food52.com/blog/10528-brown-butter-raspberries",
+      "description" : "How to get the summer pie experience with just 3 ingredients -- and without making a crust.",
+      "image" : "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/f9df9cc0-f4e8-4b27-a183-d6625bd7b477.jpg",
+      "featured" : "false"
+    }
+    ],
+      "related_content" : [
+      {
+        "title" : "7 Perfect Picnic Recipes",
+        "url" : "https://food52.com/blog/10645-community-picks-picnic?",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/ab42a92f-c2cf-483e-ab77-165597e91461.jpg"
+      },
+      {
+        "title" : "Alice Medrich's Guide to Freezing Baked Goods",
+        "url" : "https://food52.com/blog/10597-alice-medrich-s-guide-to-freezing-baked-goods",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/580d675b-15e4-434a-9946-e832a4841039.jpg"
+      },
+      {
+        "title" : "Sautéed Shrimp with Lemon, Garlic & Parsley",
+        "url" : "https://food52.com/blog/10615-sauteed-shrimp-with-lemon-garlic-and-parsley",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/0e23322b-460d-42b1-a2ab-0f3648e84623.jpg"
+      },
+      {
+        "title" : "Roasted Banana Ice Pops",
+        "url" : "https://food52.com/blog/10636-roasted-banana-paletas",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/7b03b4c6-22d0-4702-867b-21f05435af21.jpg"
+      },
+      {
+        "title" : "Italian Snacking Bread",
+        "url" : "https://food52.com/recipes/22525-italian-snacking-bread",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/33b86568-0dcd-4b4b-944c-73a80a0b83d5.jpg"
+      },
+      {
+        "title" : "How to Make Fruit Compote Without a Recipe",
+        "url" : "https://food52.com/blog/10567-how-to-make-compote-without-a-recipe",
+        "image": "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/3db4edfc-86af-44a2-a2a2-6de7fdbaba20.jpg"
+      }
+      ],
+      "provisions_content" : [
+      {
+        "title" : "",
+        "url" : "https://food52.com/provisions/products/1322-fresh-produce-sheets-pack-of-4",
+        "description" : "The Secret to Keeping Produce Fresh",
+        "image" : "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/eaef6e1e-3245-4de0-83bf-daa36c17d53c.jpg",
+        "exclusive" : "false"
+      },
+      {
+        "title" : "",
+        "url" : "https://food52.com/provisions/collections/summer-seafood",
+        "description" : "Serve Up Some Seafood This Summer",
+        "image" : "https://gallery.mailchimp.com/0ce4fc43da15cb93d7b5cd2b7/images/bfdd328a-21e4-4494-8f49-593285108f54.jpg",
+        "exclusive" : "false"
+      }
+    ]
+  }
+  ]
+}
+
