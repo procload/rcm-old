@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/procload
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ryanmerrill.net
+  * I am procload (https://keybase.io/procload) on keybase.
+  * I have a public key with fingerprint ABAB 610C 607C 717E C893  438D 30FE CCD7 62F5 91AA
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.0"
+        },
+        "key": {
+            "fingerprint": "abab610c607c717ec893438d30feccd762f591aa",
+            "host": "keybase.io",
+            "key_id": "30FECCD762F591AA",
+            "uid": "3a1c7b0130df1881efc682f9915c2d00",
+            "username": "procload"
+        },
+        "merkle_root": {
+            "ctime": 1411416668,
+            "hash": "09f5d13ea686c31538b28a090291cf06b7eab018cb720be6e5aa71426bfa9bcedab190ffd866d478bb95a1ab4f50e8f3cf879f6cd42ff0b80cb53bde294e14c2",
+            "seqno": 54364
+        },
+        "service": {
+            "hostname": "ryanmerrill.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411416712,
+    "expire_in": 157680000,
+    "prev": "7369ee3154427f97f3e3709e2bf341e7f13e0c4f9b0414f6f918b9c1920e7348",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFVkn9oVlUYx9+t3DCK/BWBmq6bqch8Pef+OD/epWTTzZLS3qQmjr2dc+5ztjvf
+3ft277utt/VmZlgqiH8IhTaRCJmGSGCQpJKIRE3QWVYQ/mFBkFmO0HCQrXNtUV7O
+H/ee53O/5/t9nrPrvrsytTUnmsTDoxdPj9UM/ywz6xreeHvAkpFfsXIDlioGEJbT
+t1D0gJWzNkJFigSyQdQQRj5ku5OGCabR6oM4CaLQUChLs8iqNqZ4+rMOwk6IS3GQ
+allCCkkwUgRRRTEFxbjjOsx3kAalfEps7XEshJHsipLyHadatzULgW92HdSysrl5
+heFbDL98uan1/lMQWFGJsIN8jRnDoBVhtuYce8r2EUrBBOKJSKU4UsVI+KnfHog3
+FqEQR9Ht0KocpAh2sVmEEGYciaQrTci152MHBGFEOdhzmLSZQBzZHCuNiKQgjAOm
+JLWRBAKeEBS7NpFacKnAFxJzpLXPCPFdyqTknsBCutpDwLSjNKNcE+W7ttZIMqSk
+50gfbO4CdpVtIiTwUhhZOc91iFtNP+O+QEFqO+3aRLi4IkITKg6KxWwI6ZRM3HKk
+oqIpdpXLpVwau1wppXA/HJGFCZ2CDELfjO3/c8UGvbMlFNuNFrxcCmIoBCnhUcKQ
+edJzoM9oUodwANMh17Wp5lQ74FDEwZbacTFQbZqIlKu5RC52NdEcM8kV5jYC6rjs
+v6CO8Sk6jWQSdIai3BuDVd1WM/vuTE1tpm5SbXpxM/dMnvLvba4eqx9/+nh46ff2
+3Xjkwz8ebZo2/8uBDdXFw8lg75vnPhq5sKbvzBfPrDp/teGDm/QdufKtBT+0H5jz
+66Wrs3DHwNdjy3raWifd/8mz32xdP7TtybbWwda928eWrVv73swdQwunbT636vPL
+T9xYs3TLjqMH/M+2nILxIQvBoX3PL22/EvPR/NDWGdc+3X/t3dLxnaOjJ/K/xXrq
++ke6n7u46MXkZmXeU9n6B6/M+GrKhcW7zj9wZhOa9e3U/sktm7/PH848NPfsye+C
+yrE/d762ac9j7x9+oa7j7MhPl5v/yp+cvtr/uHnR0e1LTu9uujf/44awvmNJ3S9z
+Ct235g6+Xpd7fN6NV2YeaVvR/2rx1kEyfGpcXv8b
+=k8QS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/procload
+
+==================================================================
