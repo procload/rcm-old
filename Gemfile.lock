@@ -140,3 +140,6 @@ DEPENDENCIES
   rake
   sass (~> 3.2.5)
   susy (~> 1.0.5)
+
+BUNDLED WITH
+   1.11.2
