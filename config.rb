@@ -3,7 +3,7 @@ require 'susy'
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  
+
   # Calculate the years for a copyright
   def copyright_years(start_year)
     end_year = Date.today.year
@@ -13,6 +13,15 @@ helpers do
       start_year.to_s + '-' + end_year.to_s
     end
   end
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  # Optional Settings
+  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+  # deploy.branch   = 'custom-branch' # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
 # Set Basecamp layout
