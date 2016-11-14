@@ -11,4 +11,3 @@ gem "middleman-deploy", "~> 0.0.9"
 gem 'middleman-blog'
 gem "builder"
 gem 'middleman-gh-pages'
-

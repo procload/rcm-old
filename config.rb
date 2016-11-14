@@ -16,12 +16,11 @@ helpers do
 end
 
 activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  # Optional Settings
-  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  # deploy.branch   = 'custom-branch' # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+  deploy.method = :git
+  # remote is optional (default is "origin")
+  # run `git remote -v` to see a list of possible remotes
+  # branch is optional (default is "gh-pages")
+  # run `git branch -a` to see a list of possible branches
 end
 
 # Set Basecamp layout
